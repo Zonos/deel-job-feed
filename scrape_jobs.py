@@ -1,118 +1,168 @@
 #!/usr/bin/env python3
 """
-Deel Job Board Scraper
-Scrapes jobs from Deel job board and generates XML feeds for job aggregators
+Deel Job Board Scraper with Playwright
+Scrapes JavaScript-rendered jobs from Deel job board and generates XML feeds for job aggregators
 """
 
-import requests
+from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from datetime import datetime
 import json
 import os
+import time
 
 DEEL_JOB_BOARD_URL = "https://jobs.deel.com/job-boards/zonos"
 COMPANY_NAME = "Zonos"
 COMPANY_URL = "https://zonos.com"
 
-def fetch_job_page():
-    """Fetch the Deel job board page"""
+def fetch_job_page_with_browser():
+    """Fetch the Deel job board page using Playwright to render JavaScript"""
     print(f"Fetching jobs from {DEEL_JOB_BOARD_URL}...")
+    print("Using browser automation to handle JavaScript rendering...")
 
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
-    }
+    with sync_playwright() as p:
+        # Launch browser in headless mode
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
 
-    response = requests.get(DEEL_JOB_BOARD_URL, headers=headers)
-    response.raise_for_status()
-    return response.text
+        # Navigate to the job board
+        page.goto(DEEL_JOB_BOARD_URL, wait_until='networkidle', timeout=30000)
+
+        # Wait for jobs to load - try multiple strategies
+        try:
+            # Wait for any job-related elements to appear
+            page.wait_for_selector('div, article, a', timeout=10000)
+            print("  ✓ Page loaded, waiting for content to render...")
+
+            # Give extra time for dynamic content
+            time.sleep(3)
+
+        except Exception as e:
+            print(f"  ⚠ Timeout waiting for selectors: {e}")
+            print("  Continuing with whatever content is available...")
+
+        # Get the rendered HTML
+        html_content = page.content()
+
+        # Save a screenshot for debugging
+        try:
+            os.makedirs('feeds', exist_ok=True)
+            page.screenshot(path='feeds/debug-screenshot.png')
+            print("  ✓ Screenshot saved to feeds/debug-screenshot.png")
+        except:
+            pass
+
+        browser.close()
+
+        return html_content
 
 def parse_jobs(html_content):
     """Parse job listings from HTML"""
     soup = BeautifulSoup(html_content, 'html.parser')
     jobs = []
 
-    # Look for job listings - Deel typically uses specific class names or data attributes
-    # This may need adjustment based on actual HTML structure
-    job_elements = soup.find_all(['div', 'article', 'li'], class_=lambda x: x and any(
-        keyword in str(x).lower() for keyword in ['job', 'position', 'listing', 'opening']
-    ))
+    print("\nSearching for job listings...")
 
-    if not job_elements:
-        # Try alternative selectors
-        job_elements = soup.find_all('a', href=lambda x: x and '/job/' in str(x))
+    # Strategy 1: Look for common job listing patterns
+    job_elements = []
 
-    print(f"Found {len(job_elements)} potential job elements")
+    # Try to find job cards/items
+    selectors = [
+        {'name': 'div', 'class_contains': ['job', 'position', 'opening', 'card', 'item']},
+        {'name': 'article', 'class_contains': None},
+        {'name': 'li', 'class_contains': ['job', 'position']},
+        {'name': 'a', 'href_contains': ['/job/', '/position/', '/opening/']}
+    ]
 
+    for selector in selectors:
+        if selector.get('class_contains'):
+            elements = soup.find_all(selector['name'], class_=lambda x: x and any(
+                keyword in str(x).lower() for keyword in selector['class_contains']
+            ))
+        elif selector.get('href_contains'):
+            elements = soup.find_all(selector['name'], href=lambda x: x and any(
+                keyword in str(x).lower() for keyword in selector['href_contains']
+            ))
+        else:
+            elements = soup.find_all(selector['name'])
+
+        if elements:
+            print(f"  Found {len(elements)} elements using selector: {selector}")
+            job_elements.extend(elements)
+
+    # Remove duplicates
+    job_elements = list(set(job_elements))
+    print(f"\nTotal unique elements found: {len(job_elements)}")
+
+    # Parse each job element
     for idx, element in enumerate(job_elements):
         try:
-            # Extract job details - adjust selectors based on actual HTML
             job = {}
 
-            # Try to find job title
-            title_elem = element.find(['h2', 'h3', 'h4']) or element
-            job['title'] = title_elem.get_text(strip=True) if title_elem else f"Position {idx + 1}"
+            # Extract job title
+            title_elem = (
+                element.find(['h1', 'h2', 'h3', 'h4', 'h5']) or
+                element.find(class_=lambda x: x and 'title' in str(x).lower()) or
+                element.find('a') or
+                element
+            )
 
-            # Try to find job URL
+            title_text = title_elem.get_text(strip=True) if title_elem else ""
+
+            # Filter out navigation items and non-job text
+            skip_keywords = ['home', 'about', 'contact', 'login', 'sign', 'menu', 'search', 'filter']
+            if any(keyword in title_text.lower() for keyword in skip_keywords):
+                continue
+
+            if not title_text or len(title_text) < 3 or len(title_text) > 200:
+                continue
+
+            job['title'] = title_text
+
+            # Extract job URL
             link = element.find('a') if element.name != 'a' else element
             if link and link.get('href'):
                 job_url = link['href']
                 if not job_url.startswith('http'):
-                    job_url = f"https://jobs.deel.com{job_url}"
+                    if job_url.startswith('/'):
+                        job_url = f"https://jobs.deel.com{job_url}"
+                    else:
+                        job_url = f"https://jobs.deel.com/{job_url}"
                 job['url'] = job_url
             else:
                 job['url'] = DEEL_JOB_BOARD_URL
 
-            # Try to find location
-            location_elem = element.find(string=lambda text: text and any(
-                keyword in text.lower() for keyword in ['remote', 'location', 'anywhere']
-            ))
+            # Extract location
+            location_elem = element.find(class_=lambda x: x and 'location' in str(x).lower())
+            if not location_elem:
+                location_text = element.find(string=lambda text: text and any(
+                    keyword in text.lower() for keyword in ['remote', 'hybrid', 'office', 'worldwide']
+                ))
+                location_elem = location_text
             job['location'] = location_elem.strip() if location_elem else "Remote"
 
-            # Try to find job type
+            # Extract job type
             type_elem = element.find(string=lambda text: text and any(
-                keyword in text.lower() for keyword in ['full-time', 'part-time', 'contract', 'full time', 'part time']
+                keyword in text.lower() for keyword in ['full-time', 'part-time', 'contract', 'full time']
             ))
             job['job_type'] = type_elem.strip() if type_elem else "Full-time"
 
             # Default values
             job['company'] = COMPANY_NAME
             job['date_posted'] = datetime.now().strftime('%Y-%m-%d')
-            job['description'] = ""
+            job['description'] = job['title']  # Use title as description for now
 
-            # Only add if we have at least a title
-            if job['title'] and len(job['title']) > 3:
-                jobs.append(job)
-                print(f"  ✓ {job['title']}")
+            # Add to list
+            jobs.append(job)
+            print(f"  ✓ Found: {job['title']}")
 
         except Exception as e:
-            print(f"  ✗ Error parsing job element: {e}")
+            print(f"  ✗ Error parsing element: {e}")
             continue
 
     return jobs
-
-def fetch_job_details(job_url):
-    """Fetch detailed job description from job detail page"""
-    try:
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
-        }
-        response = requests.get(job_url, headers=headers, timeout=10)
-        response.raise_for_status()
-
-        soup = BeautifulSoup(response.text, 'html.parser')
-
-        # Try to find job description
-        description = ""
-        desc_elem = soup.find(['div', 'section'], class_=lambda x: x and 'description' in str(x).lower())
-        if desc_elem:
-            description = desc_elem.get_text(strip=True)
-
-        return description
-    except Exception as e:
-        print(f"    Could not fetch details: {e}")
-        return ""
 
 def generate_rss_feed(jobs):
     """Generate RSS 2.0 feed"""
@@ -150,7 +200,7 @@ def generate_indeed_xml(jobs):
         job_elem = ET.SubElement(source, 'job')
         ET.SubElement(job_elem, 'title').text = job['title']
         ET.SubElement(job_elem, 'date').text = job['date_posted']
-        ET.SubElement(job_elem, 'referencenumber').text = str(hash(job['url']))[:8]
+        ET.SubElement(job_elem, 'referencenumber').text = str(abs(hash(job['url'])))[:8]
         ET.SubElement(job_elem, 'url').text = job['url']
         ET.SubElement(job_elem, 'company').text = job['company']
         ET.SubElement(job_elem, 'city').text = job['location']
@@ -208,12 +258,17 @@ def main():
     print(f"{'='*60}\n")
 
     try:
-        # Fetch and parse jobs
-        html_content = fetch_job_page()
+        # Fetch and parse jobs using Playwright
+        html_content = fetch_job_page_with_browser()
         jobs = parse_jobs(html_content)
 
         if not jobs:
-            print("\n⚠️  No jobs found! The page structure may have changed.")
+            print("\n⚠️  No jobs found!")
+            print("This could mean:")
+            print("  1. No jobs are currently posted on your Deel board")
+            print("  2. The page structure has changed")
+            print("  3. The selectors need adjustment")
+            print("\nCheck the screenshot at feeds/debug-screenshot.png")
             print("Creating empty feeds...")
         else:
             print(f"\n✓ Successfully parsed {len(jobs)} jobs")
