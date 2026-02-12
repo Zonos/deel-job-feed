@@ -4,19 +4,21 @@ on:
     schedule:
       - cron: '0 */6 * * *'
     workflow_dispatch:
-    push:
-      branches:
-        - main
-
-permissions:
-    contents: write
 
 jobs:
     scrape:
       runs-on: ubuntu-22.04
       steps:
+        - name: Generate app token
+          id: app-token
+          uses: actions/create-github-app-token@v1
+          with:
+            app-id: ${{ secrets.FEED_BOT_APP_ID }}
+            private-key: ${{ secrets.FEED_BOT_PRIVATE_KEY }}
         - name: Checkout repository
           uses: actions/checkout@v4
+          with:
+            token: ${{ steps.app-token.outputs.token }}
         - name: Set up Python
           uses: actions/setup-python@v5
           with:
@@ -34,8 +36,8 @@ jobs:
             python scrape_jobs.py
         - name: Commit and push feeds
           run: |
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
+            git config --local user.email "zonos-feed-bot[bot]@users.noreply.github.com"
+            git config --local user.name "zonos-feed-bot[bot]"
             git add feeds/
             git diff --staged --quiet || git commit -m "Update job feeds"
             git push
