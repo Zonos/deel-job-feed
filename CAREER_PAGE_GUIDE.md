@@ -346,6 +346,34 @@ The careers page is integrated via **Next.js rewrites** in `zonos.com`:
 
 3. **Clear browser cache**
 
+### Job Detail Pages Return 404?
+
+**Symptom:** Job listing page works, but clicking on individual jobs returns 404.
+
+**Root Cause:** Next.js client-side router intercepts relative link clicks. Since `.html` files aren't in Next.js's `pageExtensions` configuration, the router doesn't know how to handle them and returns 404.
+
+**How We Fixed It (PR #5):**
+1. Changed all career page links from **relative** to **absolute** paths
+2. Job cards: `href="filename.html"` → `href="/careers/filename.html"`
+3. Back button: `href="index.html"` → `href="/careers/"`
+
+This forces full-page navigation (bypassing Next.js's client-side router), allowing the server-side rewrites in `next.config.ts` to execute properly.
+
+**Testing the Fix:**
+```bash
+# This should work (server-side)
+curl -I https://zonos.com/careers/corporate-broker-...html
+# Should return 200
+
+# Browser clicks now also work because they trigger full-page navigation
+```
+
+**Technical Details:**
+- Server-side rewrites in `next.config.ts` work correctly with curl/direct navigation
+- Client-side router was the issue, not middleware or rewrites
+- Absolute paths force full-page navigation, which triggers rewrites
+- No middleware changes needed (previous PR #2756 approach was ineffective)
+
 ---
 
 ## 📞 Getting Help
@@ -379,10 +407,12 @@ The careers page is integrated via **Next.js rewrites** in `zonos.com`:
 |------|--------|--------|
 | 2026-02-12 | Initial setup & integration with zonos.com | Hannah/Claude |
 | 2026-02-12 | Transferred to Zonos org, enabled GitHub Pages | Hannah/Claude |
-| 2026-02-12 | Documentation created | Claude |
+| 2026-02-12 | Fixed CSS & logo paths (PR #3) | Hannah/Claude |
+| 2026-02-12 | Fixed job page 404s with absolute paths (PR #5) | Hannah/Claude |
+| 2026-02-12 | Documentation created & updated | Claude |
 
 ---
 
-**Last Updated:** 2026-02-12
+**Last Updated:** 2026-02-12 (Fixed job detail page 404s)
 **Maintained By:** Hannah Huegel
 **Project:** "New Career Page"
