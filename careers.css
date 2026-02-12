@@ -166,10 +166,17 @@ body {
 
 .jobs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+    justify-items: center;
+}
+
+/* Center single job card */
+.jobs-grid > .job-card:only-child {
+    max-width: 500px;
+    width: 100%;
 }
 
 .job-card {

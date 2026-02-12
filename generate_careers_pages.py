@@ -152,11 +152,15 @@ def extract_location_parts(job):
     # Check if remote
     is_remote = city.lower() == 'remote' or 'remote' in job.get('title', '').lower()
 
-    # Try to extract location from jobtype or description
-    jobtype = job.get('jobtype', '')
-    if 'St.George' in jobtype or 'St. George' in jobtype:
-        city = 'St. George'
-        state = 'UT'
+    # Try to extract location from jobtype or description if not already set
+    if not city or city.lower() == 'remote':
+        jobtype = job.get('jobtype', '')
+        # Look for location patterns like "St.George UT" or "St. George, UT"
+        location_match = re.search(r'(St\.?\s*George)\s*,?\s*(UT|Utah)', jobtype, re.IGNORECASE)
+        if location_match:
+            city = 'St. George'
+            state = 'UT'
+            is_remote = False  # If we found a specific location, it's not just remote
 
     return {
         'city': city,
@@ -231,11 +235,11 @@ def generate_job_page(job, index=0):
 
     location_info = extract_location_parts(job)
 
-    # Format location display - don't show "Remote", show actual office location
+    # Format location display - show actual office location
     if location_info['city'] and location_info['city'].lower() != 'remote':
         location_display = f"{location_info['city']}, {location_info['state']}"
     else:
-        location_display = "Multiple Locations"
+        location_display = "St. George, UT"  # Default to main office
 
     # Generate schema
     schema_json = generate_job_schema(job, job_url)
@@ -353,13 +357,11 @@ def generate_index_page(jobs):
         filename = f"{slug}-{job_id}.html"
 
         location_info = extract_location_parts(job)
-        # Don't show "Remote" as location, show actual office location if available
-        if location_info['is_remote'] and location_info['city'] and location_info['city'].lower() != 'remote':
-            location_display = f"{location_info['city']}, {location_info['state']}"
-        elif not location_info['is_remote'] and location_info['city']:
+        # Show the actual office location
+        if location_info['city'] and location_info['city'].lower() != 'remote':
             location_display = f"{location_info['city']}, {location_info['state']}"
         else:
-            location_display = "Multiple Locations"
+            location_display = "St. George, UT"  # Default to main office
 
         job_cards_html += f"""
                 <article class="job-card">
