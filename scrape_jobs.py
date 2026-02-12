@@ -28,20 +28,26 @@ def fetch_job_page_with_browser():
         page = browser.new_page()
 
         # Navigate to the job board
-        page.goto(DEEL_JOB_BOARD_URL, wait_until='networkidle', timeout=30000)
+        print("  ⏳ Loading page...")
+        page.goto(DEEL_JOB_BOARD_URL, wait_until='domcontentloaded', timeout=60000)
 
-        # Wait for jobs to load - try multiple strategies
+        # Wait for the loading screens to finish and jobs to appear
+        print("  ⏳ Waiting for jobs to load (this takes a while due to loading screens)...")
+
+        # Wait longer for content to fully render
+        time.sleep(10)
+
+        # Try to wait for text content that indicates jobs are loaded
         try:
-            # Wait for any job-related elements to appear
-            page.wait_for_selector('div, article, a', timeout=10000)
-            print("  ✓ Page loaded, waiting for content to render...")
-
-            # Give extra time for dynamic content
-            time.sleep(3)
-
+            # Wait for page to have substantial content
+            page.wait_for_function("document.body.innerText.length > 100", timeout=15000)
+            print("  ✓ Page content loaded")
         except Exception as e:
-            print(f"  ⚠ Timeout waiting for selectors: {e}")
-            print("  Continuing with whatever content is available...")
+            print(f"  ⚠ Timeout waiting for content: {e}")
+
+        # Additional wait to ensure everything is rendered
+        time.sleep(5)
+        print("  ✓ Finished waiting for page to fully render")
 
         # Get the rendered HTML
         html_content = page.content()
@@ -49,7 +55,7 @@ def fetch_job_page_with_browser():
         # Save a screenshot for debugging
         try:
             os.makedirs('feeds', exist_ok=True)
-            page.screenshot(path='feeds/debug-screenshot.png')
+            page.screenshot(path='feeds/debug-screenshot.png', full_page=True)
             print("  ✓ Screenshot saved to feeds/debug-screenshot.png")
         except:
             pass
@@ -65,15 +71,30 @@ def parse_jobs(html_content):
 
     print("\nSearching for job listings...")
 
+    # Debug: Print all visible text to help understand page structure
+    body_text = soup.get_text(strip=True)
+    print(f"  Page has {len(body_text)} characters of text")
+    if 'broker' in body_text.lower() or 'corporate' in body_text.lower():
+        print("  ✓ Found 'broker' or 'corporate' text on page - jobs are present!")
+
+    # Save HTML for debugging
+    try:
+        with open('feeds/debug-page.html', 'w', encoding='utf-8') as f:
+            f.write(html_content)
+        print("  ✓ Saved HTML to feeds/debug-page.html for debugging")
+    except:
+        pass
+
     # Strategy 1: Look for common job listing patterns
     job_elements = []
 
-    # Try to find job cards/items
+    # Try to find job cards/items - expanded selectors
     selectors = [
-        {'name': 'div', 'class_contains': ['job', 'position', 'opening', 'card', 'item']},
+        {'name': 'div', 'class_contains': ['job', 'position', 'opening', 'card', 'item', 'posting', 'listing', 'role']},
         {'name': 'article', 'class_contains': None},
-        {'name': 'li', 'class_contains': ['job', 'position']},
-        {'name': 'a', 'href_contains': ['/job/', '/position/', '/opening/']}
+        {'name': 'li', 'class_contains': ['job', 'position', 'role']},
+        {'name': 'a', 'href_contains': ['/job', '/position', '/opening', '/role', '/posting']},
+        {'name': 'button', 'class_contains': ['job', 'card', 'position']},
     ]
 
     for selector in selectors:
