@@ -273,4 +273,69 @@ For issues or questions about this setup, refer to:
 
 ---
 
-**Status:** ✅ Production Ready - Feeds Live and Updating
+## Job Description Formatting Pattern
+
+**IMPORTANT:** This formatting pattern MUST be preserved for all future job postings.
+
+### Sections to Extract (in order)
+The scraper extracts ONLY these sections from the Deel job posting Overview tab:
+
+1. **Intro Paragraph** - Starts with "At Zonos..." through "This position is based in [Location]. Relocation assistance provided."
+2. **About the Role** - Paragraph format
+3. **What You'll Work On** - Bullet list format (5 items typically)
+4. **Why This Role is Different** - Paragraph format
+5. **What We're Looking For** - Paragraph format
+6. **Required** - Bullet list format (requirements)
+7. **What We Offer** - Bullet list format (benefits)
+
+### Sections to EXCLUDE
+- ❌ Life at Zonos
+- ❌ Application form fields
+- ❌ Navigation/boilerplate text
+
+### HTML Structure
+```html
+<!-- Intro paragraphs (2-3 <p> tags) -->
+<p>At Zonos we provide scalable technology...</p>
+<p>This position is based in St. George, Utah. Relocation assistance is provided.</p>
+
+<!-- Each section has <h3> header + content -->
+<h3>About the Role</h3>
+<p>Description paragraph...</p>
+
+<h3>What You'll Work On</h3>
+<ul>
+  <li>Bullet point 1</li>
+  <li>Bullet point 2</li>
+  ...
+</ul>
+
+<h3>Why This Role is Different</h3>
+<p>Description paragraph...</p>
+
+<!-- Continue pattern for remaining sections -->
+```
+
+### Formatting Rules
+1. ✅ **Preserve bullet points** - Use `<ul>` and `<li>` tags for lists
+2. ✅ **Section headers** - Use `<h3>` tags (NOT `<h2>`)
+3. ✅ **Paragraphs** - Use `<p>` tags for text blocks
+4. ✅ **NO "About the Position" heading** - Start directly with content
+5. ✅ **St. George, Utah** - Protect from sentence splitting
+6. ✅ **Clean structure** - 6 sections, 3 bullet lists, ~4,200 characters
+
+### Implementation Location
+- **Scraper:** `/scrape_jobs.py` - `fetch_job_details()` function (lines ~100-200)
+- **Generator:** `/generate_careers_pages.py` - Job page template (lines ~340-360)
+
+### Validation
+Expected output for each job:
+- 6 `<h3>` section headers
+- 6 `<p>` paragraph blocks minimum
+- 3 `<ul>` bullet lists
+- 15-20 `<li>` items total
+- ~4,000-4,500 characters
+
+---
+
+**Status:** ✅ Production Ready - Feeds Live and Updating with Proper Formatting
