@@ -200,9 +200,9 @@ body {
 }
 
 .job-card:hover {
-    box-shadow: var(--shadow-hover);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
     transform: translateY(-4px);
-    border-color: rgba(49, 34, 246, 0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .job-card:hover::before {
@@ -210,14 +210,20 @@ body {
 }
 
 .job-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     margin-bottom: 0.75rem;
+    line-height: 1.4;
+    font-weight: 600;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .job-card h3 a {
     color: var(--text-color);
     text-decoration: none;
     transition: var(--transition);
+    display: block;
 }
 
 .job-card h3 a:hover {
