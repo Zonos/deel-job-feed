@@ -3,48 +3,6 @@
     "@context": "https://schema.org/",
     "@type": "JobPosting",
     "title": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
-    "description": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
-    "datePosted": "2026-02-22",
-    "hiringOrganization": {
-      "@type": "Organization",
-      "name": "Zonos",
-      "sameAs": "https://zonos.com"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Remote"
-      }
-    },
-    "url": "https://jobs.deel.com/job-boards/zonos",
-    "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
-  },
-  {
-    "@context": "https://schema.org/",
-    "@type": "JobPosting",
-    "title": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
-    "description": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
-    "datePosted": "2026-02-22",
-    "hiringOrganization": {
-      "@type": "Organization",
-      "name": "Zonos",
-      "sameAs": "https://zonos.com"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Remote"
-      }
-    },
-    "url": "https://jobs.deel.com/job-boards/zonos",
-    "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
-  },
-  {
-    "@context": "https://schema.org/",
-    "@type": "JobPosting",
-    "title": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
     "description": "<h3>What We Offer</h3>\n<ul>\n<li>Salaries will vary based on various factors such as education, experience, training, scope, etc.</li>\n<li>Medical, Dental, Vision, & Life - we pay 100% of the employee premium!</li>\n<li>Paid leave for maternity, paternity, and other life events</li>\n<li>Employee Assistance Program</li>\n<li>401k retirement plan with generous company match</li>\n<li>Flexible time off - we require all our Zonuts to take a minimum of 2 weeks off per year. Take some time to relax!</li>\n<li>1 month paid time off at 5 year anniversary</li>\n<li>Weekly company lunch</li>\n</ul>",
     "datePosted": "2026-02-22",
     "hiringOrganization": {
@@ -61,6 +19,69 @@
     },
     "url": "https://jobs.deel.com/job-boards/zonos/job-details/73af1f0e-6b33-41e4-99f4-3cf1178e9f00",
     "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
+    "description": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
+    "datePosted": "2026-02-22",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Zonos",
+      "sameAs": "https://zonos.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote"
+      }
+    },
+    "url": "https://jobs.deel.com/job-boards/zonos",
+    "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "description": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "datePosted": "2026-02-22",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Zonos",
+      "sameAs": "https://zonos.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote"
+      }
+    },
+    "url": "https://jobs.deel.com/job-boards/zonos",
+    "employmentType": "REVENUE___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "description": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "datePosted": "2026-02-22",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Zonos",
+      "sameAs": "https://zonos.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote"
+      }
+    },
+    "url": "https://jobs.deel.com/job-boards/zonos",
+    "employmentType": "REVENUE___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
   },
   {
     "@context": "https://schema.org/",
@@ -86,8 +107,8 @@
   {
     "@context": "https://schema.org/",
     "@type": "JobPosting",
-    "title": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
-    "description": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "title": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
+    "description": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
     "datePosted": "2026-02-22",
     "hiringOrganization": {
       "@type": "Organization",
@@ -102,27 +123,6 @@
       }
     },
     "url": "https://jobs.deel.com/job-boards/zonos",
-    "employmentType": "REVENUE___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
-  },
-  {
-    "@context": "https://schema.org/",
-    "@type": "JobPosting",
-    "title": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
-    "description": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
-    "datePosted": "2026-02-22",
-    "hiringOrganization": {
-      "@type": "Organization",
-      "name": "Zonos",
-      "sameAs": "https://zonos.com"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Remote"
-      }
-    },
-    "url": "https://jobs.deel.com/job-boards/zonos",
-    "employmentType": "REVENUE___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
+    "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
   }
 ]
