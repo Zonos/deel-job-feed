@@ -23,27 +23,6 @@
   {
     "@context": "https://schema.org/",
     "@type": "JobPosting",
-    "title": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
-    "description": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
-    "datePosted": "2026-02-27",
-    "hiringOrganization": {
-      "@type": "Organization",
-      "name": "Zonos",
-      "sameAs": "https://zonos.com"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Remote"
-      }
-    },
-    "url": "https://jobs.deel.com/job-boards/zonos",
-    "employmentType": "REVENUE___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
-  },
-  {
-    "@context": "https://schema.org/",
-    "@type": "JobPosting",
     "title": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
     "description": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
     "datePosted": "2026-02-27",
@@ -61,48 +40,6 @@
     },
     "url": "https://jobs.deel.com/job-boards/zonos",
     "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
-  },
-  {
-    "@context": "https://schema.org/",
-    "@type": "JobPosting",
-    "title": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
-    "description": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
-    "datePosted": "2026-02-27",
-    "hiringOrganization": {
-      "@type": "Organization",
-      "name": "Zonos",
-      "sameAs": "https://zonos.com"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Remote"
-      }
-    },
-    "url": "https://jobs.deel.com/job-boards/zonos",
-    "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
-  },
-  {
-    "@context": "https://schema.org/",
-    "@type": "JobPosting",
-    "title": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
-    "description": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
-    "datePosted": "2026-02-27",
-    "hiringOrganization": {
-      "@type": "Organization",
-      "name": "Zonos",
-      "sameAs": "https://zonos.com"
-    },
-    "jobLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Remote"
-      }
-    },
-    "url": "https://jobs.deel.com/job-boards/zonos",
-    "employmentType": "REVENUE___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
   },
   {
     "@context": "https://schema.org/",
@@ -124,5 +61,68 @@
     },
     "url": "https://jobs.deel.com/job-boards/zonos/job-details/73af1f0e-6b33-41e4-99f4-3cf1178e9f00",
     "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
+    "description": "DevOps EngineerEngineering - Department \u00b7 St.George UT \u00b7 Full-time",
+    "datePosted": "2026-02-27",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Zonos",
+      "sameAs": "https://zonos.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote"
+      }
+    },
+    "url": "https://jobs.deel.com/job-boards/zonos",
+    "employmentType": "ENGINEERING___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "description": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "datePosted": "2026-02-27",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Zonos",
+      "sameAs": "https://zonos.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote"
+      }
+    },
+    "url": "https://jobs.deel.com/job-boards/zonos",
+    "employmentType": "REVENUE___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "description": "Corporate Broker (Licensed Customs Broker)Revenue - Department \u00b7 St.George UT \u00b7 Full-time",
+    "datePosted": "2026-02-27",
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Zonos",
+      "sameAs": "https://zonos.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote"
+      }
+    },
+    "url": "https://jobs.deel.com/job-boards/zonos",
+    "employmentType": "REVENUE___DEPARTMENT_\u00b7_ST.GEORGE_UT_\u00b7_FULL_TIME"
   }
 ]
