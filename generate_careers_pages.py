@@ -22,9 +22,15 @@ COMPANY_DESCRIPTION = "Zonos provides scalable technology to simplify the comple
 def fetch_jobs():
     """Fetch jobs from the JSON feed"""
     try:
-        response = requests.get(FEED_URL, timeout=10)
-        response.raise_for_status()
-        data = response.json()
+        # Check if FEED_URL is a local file path or URL
+        if FEED_URL.startswith(('http://', 'https://')):
+            response = requests.get(FEED_URL, timeout=10)
+            response.raise_for_status()
+            data = response.json()
+        else:
+            # Read from local file
+            with open(FEED_URL, 'r', encoding='utf-8') as f:
+                data = json.load(f)
 
         # Handle both list and dict responses
         if isinstance(data, list):
@@ -92,8 +98,15 @@ def slugify(text):
 
 def clean_job_title(title):
     """Clean job title by removing unwanted suffixes"""
-    # Remove everything after common delimiters
-    title = re.split(r'Department\s*[·•]|Department\s*-', title, flags=re.IGNORECASE)[0]
+    # Handle new feed format: <title><DeptName> - Department · <location>
+    # e.g. "DevOps EngineerEngineering - Department · St.George UT · Full-time"
+    # Lookbehind ensures we match the dept name where it's joined directly to the title (no space)
+    match = re.search(r'(?<=[a-z)])[A-Z][a-zA-Z]+\s*-\s*Department[\s·•]', title)
+    if match:
+        title = title[:match.start()].strip()
+    else:
+        # Handle old feed format: <title>Department · <location>
+        title = re.split(r'Department\s*[·•]|Department\s*-', title, flags=re.IGNORECASE)[0]
     title = re.split(r'\s*[·•]\s*Remote', title, flags=re.IGNORECASE)[0]
     title = re.split(r'\s*[·•]\s*Full-time', title, flags=re.IGNORECASE)[0]
     title = re.split(r'\s*[·•]\s*Part-time', title, flags=re.IGNORECASE)[0]
@@ -111,6 +124,23 @@ def format_title_with_breaks(title):
 
 def clean_job_description(description, title=''):
     """Clean job description by removing unwanted text"""
+    # Check if description contains HTML tags - if so, preserve HTML structure
+    has_html = bool(re.search(r'<[^>]+>', description))
+
+    if has_html:
+        # For HTML content, preserve all HTML tags and structure
+        # Only remove specific boilerplate text at the beginning
+        # Remove the Deel page header text (before the first <p> tag ideally)
+        description = re.sub(r'^[^<]*?You need to enable JavaScript to run this app\.?\s*', '', description, flags=re.IGNORECASE)
+        description = re.sub(r'^[^<]*?@ Zonos \| Deel - Your forever people platform\s*', '', description, flags=re.IGNORECASE)
+
+        # Remove opening <p> tags that contain boilerplate
+        description = re.sub(r'<p>\s*Corporate Broker[^<]*?@ Zonos \| Deel[^<]*?</p>', '', description, flags=re.IGNORECASE)
+        description = re.sub(r'<p>\s*You need to enable JavaScript[^<]*?</p>', '', description, flags=re.IGNORECASE)
+
+        return description.strip()
+
+    # For plain text, do more aggressive cleaning
     # Remove "Department" and related text patterns
     description = re.sub(r'Department\s*[·•]\s*[^·•\n]+', '', description, flags=re.IGNORECASE)
     description = re.sub(r'\bDepartment\b[·•\s-]*', '', description, flags=re.IGNORECASE)
@@ -131,6 +161,10 @@ def clean_job_description(description, title=''):
 
 def clean_job_type(job_type):
     """Clean job type field by removing location and extra text"""
+    # Extract recognized job type keyword directly from the raw string
+    type_match = re.search(r'\b(Full-time|Part-time|Contract|Temporary|Internship)\b', job_type, re.IGNORECASE)
+    if type_match:
+        return type_match.group(1)
     # Remove everything after and including "Department"
     job_type = re.split(r'Department\s*[·•]', job_type, flags=re.IGNORECASE)[0]
     # Remove location patterns like "St.George UT"
@@ -320,13 +354,11 @@ def generate_job_page(job, index=0):
                 </header>
 
                 {f'''<section class="job-description">
-                    <h2>About the Position</h2>
                     <div class="description-content">
                         <p>We're looking for a talented professional to join our team in this role. This position offers an opportunity to work with cutting-edge technology and contribute to our mission of creating trust in global trade.</p>
                         <p>For detailed information about responsibilities, qualifications, and benefits, please click "Apply Now" to view the full job posting.</p>
                     </div>
                 </section>''' if not job.get('description') else f'''<section class="job-description">
-                    <h2>About the Position</h2>
                     <div class="description-content">
                         {job.get('description')}
                     </div>
@@ -479,8 +511,8 @@ def generate_index_page(jobs):
                     <h3>Our Locations</h3>
                     <div class="offices-grid">
                         <div class="office">
-                            <h4>🏜️ St. George, Utah</h4>
-                            <p>Welcome to Southern Utah where the sun is shining 255 days out of the year! Located at Tech Ridge, neighboring the stunning Zion National Park with endless options for hiking, biking, and outdoor recreation. Just 90 minutes from Las Vegas.</p>
+                            <h4>🇺🇸 Utah, United States</h4>
+                            <p>Headquartered in St. George, Utah, our team enjoys Southern Utah's 255 days of sunshine each year. Situated at Tech Ridge near the breathtaking Zion National Park, there's no shortage of hiking, biking, and outdoor adventure—all just 90 minutes from Las Vegas.</p>
                         </div>
                         <div class="office">
                             <h4>🇳🇱 Utrecht, Netherlands</h4>
