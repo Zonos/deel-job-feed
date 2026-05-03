@@ -98,14 +98,18 @@ def slugify(text):
 
 def clean_job_title(title):
     """Clean job title by removing unwanted suffixes"""
-    # Handle new feed format: <title><DeptName> - Department · <location>
-    # e.g. "DevOps EngineerEngineering - Department · St.George UT · Full-time"
-    # Lookbehind ensures we match the dept name where it's joined directly to the title (no space)
+    # Strip concatenated location suffix (no separator): "TitleSt.George UT..." or "Title(...)St.George UT..."
+    title = re.sub(r'(?<=[a-zA-Z)])\s*St\.?\s*George\b.*$', '', title, flags=re.IGNORECASE)
+    # Strip concatenated salary suffix
+    title = re.sub(r'\s*\$[\d,]+.*$', '', title)
+    # Strip concatenated job type without separator
+    title = re.sub(r'(?<=[a-zA-Z)])\s*Full[-\s]?time\b.*$', '', title, flags=re.IGNORECASE)
+    title = re.sub(r'(?<=[a-zA-Z)])\s*Part[-\s]?time\b.*$', '', title, flags=re.IGNORECASE)
+    # Handle bullet-separated format: <title><DeptName> - Department · <location>
     match = re.search(r'(?<=[a-z)])[A-Z][a-zA-Z]+\s*-\s*Department[\s·•]', title)
     if match:
         title = title[:match.start()].strip()
     else:
-        # Handle old feed format: <title>Department · <location>
         title = re.split(r'Department\s*[·•]|Department\s*-', title, flags=re.IGNORECASE)[0]
     title = re.split(r'\s*[·•]\s*Remote', title, flags=re.IGNORECASE)[0]
     title = re.split(r'\s*[·•]\s*Full-time', title, flags=re.IGNORECASE)[0]
@@ -304,7 +308,7 @@ def generate_job_page(job, index=0):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/careers/careers.css">
+    <link rel="stylesheet" href="./careers.css">
 
     <!-- Structured Data for Job Posting -->
     <script type="application/ld+json">
@@ -315,7 +319,7 @@ def generate_job_page(job, index=0):
     <header class="site-header">
         <div class="container">
             <a href="{COMPANY_URL}" class="logo">
-                <img src="/careers/zonos-logo-black.png" alt="{COMPANY_NAME}" />
+                <img src="./zonos-logo-black.png" alt="{COMPANY_NAME}" />
             </a>
             <nav>
                 <a href="index.html">← All Jobs</a>
@@ -438,7 +442,7 @@ def generate_index_page(jobs):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/careers/careers.css">
+    <link rel="stylesheet" href="./careers.css">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Careers at {COMPANY_NAME}">
@@ -455,7 +459,7 @@ def generate_index_page(jobs):
     <header class="site-header">
         <div class="container">
             <a href="{COMPANY_URL}" class="logo">
-                <img src="/careers/zonos-logo-black.png" alt="{COMPANY_NAME}" />
+                <img src="./zonos-logo-black.png" alt="{COMPANY_NAME}" />
             </a>
         </div>
     </header>
