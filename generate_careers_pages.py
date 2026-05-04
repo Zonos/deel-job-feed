@@ -98,14 +98,18 @@ def slugify(text):
 
 def clean_job_title(title):
     """Clean job title by removing unwanted suffixes"""
-    # Handle new feed format: <title><DeptName> - Department · <location>
-    # e.g. "DevOps EngineerEngineering - Department · St.George UT · Full-time"
-    # Lookbehind ensures we match the dept name where it's joined directly to the title (no space)
+    # Strip concatenated location suffix (no separator): "TitleSt.George UT..." or "Title(...)St.George UT..."
+    title = re.sub(r'(?<=[a-zA-Z)])\s*St\.?\s*George\b.*$', '', title, flags=re.IGNORECASE)
+    # Strip concatenated salary suffix
+    title = re.sub(r'\s*\$[\d,]+.*$', '', title)
+    # Strip concatenated job type without separator
+    title = re.sub(r'(?<=[a-zA-Z)])\s*Full[-\s]?time\b.*$', '', title, flags=re.IGNORECASE)
+    title = re.sub(r'(?<=[a-zA-Z)])\s*Part[-\s]?time\b.*$', '', title, flags=re.IGNORECASE)
+    # Handle bullet-separated format: <title><DeptName> - Department · <location>
     match = re.search(r'(?<=[a-z)])[A-Z][a-zA-Z]+\s*-\s*Department[\s·•]', title)
     if match:
         title = title[:match.start()].strip()
     else:
-        # Handle old feed format: <title>Department · <location>
         title = re.split(r'Department\s*[·•]|Department\s*-', title, flags=re.IGNORECASE)[0]
     title = re.split(r'\s*[·•]\s*Remote', title, flags=re.IGNORECASE)[0]
     title = re.split(r'\s*[·•]\s*Full-time', title, flags=re.IGNORECASE)[0]
