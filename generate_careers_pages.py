@@ -308,7 +308,7 @@ def generate_job_page(job, index=0):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./careers.css">
+    <link rel="stylesheet" href="/careers/careers.css">
 
     <!-- Structured Data for Job Posting -->
     <script type="application/ld+json">
@@ -319,7 +319,7 @@ def generate_job_page(job, index=0):
     <header class="site-header">
         <div class="container">
             <a href="{COMPANY_URL}" class="logo">
-                <img src="./zonos-logo-black.png" alt="{COMPANY_NAME}" />
+                <img src="/careers/zonos-logo-black.png" alt="{COMPANY_NAME}" />
             </a>
             <nav>
                 <a href="index.html">← All Jobs</a>
@@ -442,7 +442,7 @@ def generate_index_page(jobs):
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./careers.css">
+    <link rel="stylesheet" href="/careers/careers.css">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Careers at {COMPANY_NAME}">
@@ -459,7 +459,7 @@ def generate_index_page(jobs):
     <header class="site-header">
         <div class="container">
             <a href="{COMPANY_URL}" class="logo">
-                <img src="./zonos-logo-black.png" alt="{COMPANY_NAME}" />
+                <img src="/careers/zonos-logo-black.png" alt="{COMPANY_NAME}" />
             </a>
         </div>
     </header>
