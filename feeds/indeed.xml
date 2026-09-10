@@ -8,7 +8,7 @@
   <job>
     <title>Customs Entry Writer/AuditorSt.George UTFull-time</title>
     <date>2026-09-10</date>
-    <referencenumber>45385516</referencenumber>
+    <referencenumber>73033674</referencenumber>
     <url>https://jobs.deel.com/zonos/job-details/bc873ae8-2150-4e1c-8cfa-8d25e78a374e/overview</url>
     <company>Zonos</company>
     <city>Remote</city>
@@ -82,152 +82,6 @@
 &lt;li&gt;Customs Entry Writer I:$50,000–$70,000 Prior customs brokerage experience is not required. We are looking for someone highly detail-oriented, curious, and capable of learning a complex regulatory environment.&lt;/li&gt;
 &lt;li&gt;Experienced Customs Entry Writer:$72,000–$85,000 For candidates with demonstrated experience independently preparing customs entries, working with ACE/ABI, tariff classification, PGAs, entry exceptions, and related customs processes.&lt;/li&gt;
 &lt;/ul&gt;</description>
-    <jobtype>Full-time</jobtype>
-    <category/>
-    <experience/>
-    <education/>
-  </job>
-  <job>
-    <title>Senior/Staff Backend EngineerGold CoastFull-time</title>
-    <date>2026-09-10</date>
-    <referencenumber>54257957</referencenumber>
-    <url>https://jobs.deel.com/zonos/job-details/9fb5a596-2b33-4825-b7bb-0f49e98fc797/overview</url>
-    <company>Zonos</company>
-    <city>Remote</city>
-    <state/>
-    <country>US</country>
-    <postalcode/>
-    <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
-&lt;h3&gt;Overview&lt;/h3&gt;
-&lt;p&gt;We're hiring engineers who build things customers actually use. The title says &quot;backend,&quot; but what we want first is a product-minded problem solver who happens to be excellent at backend systems. We’re looking for someone who cares more about whether a feature ships and works than about which framework got them there. The systems we build are real-time, mission-critical, and genuinely complex.&lt;/p&gt;
-&lt;p&gt;Our backend runs primarily on Java/JVM.&lt;/p&gt;
-&lt;h3&gt;How We're Organized&lt;/h3&gt;
-&lt;p&gt;We don't have product managers. At the senior and staff level,you talk to customers directly, understand their problems, decide what to build, and ship it.That's not a side responsibility; it's the job.&lt;/p&gt;
-&lt;p&gt;In practice, that means:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Prioritization happens at the initiative level.Engineering is organized into a small number of initiatives, each with a named owner and tech lead who set direction and resolve roadmap conflicts. You're not prioritizing in a vacuum,  but you do own what gets built inside your area.&lt;/li&gt;
-&lt;li&gt;Saying no is part of the job.Customers and internal stakeholders will ask for things. Part of being senior here is having the judgment to push back, propose alternatives, or escalate when trade-offs need a wider conversation.&lt;/li&gt;
-&lt;li&gt;You're supported on customer work, not thrown into it.Customer success, sales engineering, and support handle the front line. When you join a customer call, it's because the problem needs an engineer in the room, not because you're running the account.&lt;/li&gt;
-&lt;li&gt;Conflicts go to the tech leads and CTO.Disagreements about architecture, scope, or priority don't fester. We resolve them quickly, in writing, with clear owners.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you've worked in environments where PM hand-offs slowed you down or watered down the product, you'll recognize why we do it this way. If you've never owned the full loop before, this will be a stretch — and that's fine, as long as you're hungry for it.&lt;/p&gt;
-&lt;h3&gt;Working with Agentic Tools&lt;/h3&gt;
-&lt;p&gt;Agentic development has changed what senior engineering looks like day-to-day. We're not throwing out craft. If anything, the bar on judgment, architecture, and verification has gone up. But the mechanics have shifted: more time spent specifying problems clearly, reviewing generated code with a critical eye, and catching the subtle failure modes that agents miss. Less time on boilerplate.&lt;/p&gt;
-&lt;p&gt;The engineers doing the best work here treat agents the way a strong senior treats a sharp but inexperienced teammate: delegate the right things, verify carefully, and own the outcome. They also understand that LLM intelligence is jagged — brilliant in some places, naive in others — and have built the instincts to know when to trust the output and when to dig deeper.&lt;/p&gt;
-&lt;p&gt;We want engineers who've already adopted these tools, formed real opinions about where they help and where they don't, and can bring that experience to the team.&lt;/p&gt;
-&lt;h3&gt;What You'll Do&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Work directly with customers to understand problems worth solving — and decide which ones to solve&lt;/li&gt;
-&lt;li&gt;Design backend systems and APIs that scale to billions of transactions&lt;/li&gt;
-&lt;li&gt;Use agentic tools effectively to implement features, while holding a high bar on what ships&lt;/li&gt;
-&lt;li&gt;Own architecture and trade-off decisions in your domain (we use a Bronze/Silver/Gold blast-radius framework — you'll learn it fast)&lt;/li&gt;
-&lt;li&gt;Debug production issues across services, including the gnarly ones that require deep system understanding&lt;/li&gt;
-&lt;li&gt;Champion reliability, observability, and blast-radius awareness in everything you ship&lt;/li&gt;
-&lt;li&gt;Raise the bar in code review — for both human-written and agent-generated code&lt;/li&gt;
-&lt;li&gt;Mentor teammates on customer empathy, spec-driven development, and getting real leverage from agents&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;You Might Be a Great Fit If You...&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Lead with product instinct. You ask &quot;should we build this?&quot; before &quot;how do we build this?&quot; — and you're comfortable getting on a call with a customer to find out.&lt;/li&gt;
-&lt;li&gt;Want to own the full loop: customer problem → spec → implementation → ship → follow-up.&lt;/li&gt;
-&lt;li&gt;Are fluent in Java/JVM — or fluent enough to read, debug, and verify Java code at a senior level&lt;/li&gt;
-&lt;li&gt;Have integrated agentic tools (Claude Code, Cursor, etc.) into your daily workflow and have grounded opinions about what works and what doesn't&lt;/li&gt;
-&lt;li&gt;Are inquisitive by default — you read papers, try new tools, talk to customers, and bring ideas back to the team&lt;/li&gt;
-&lt;li&gt;Take ownership. When something breaks, you fix it. When something is unclear, you go find out.&lt;/li&gt;
-&lt;li&gt;Have e-commerce, payments, or international trade background — or are excited to go deep in the space&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;More about Zonos&lt;/p&gt;
-&lt;p&gt;Learn more about Zonos, our mission, and the type of company we are building.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Zonos, building a great company&lt;/li&gt;
-&lt;li&gt;Zonos, diversity, and inclusion&lt;/li&gt;
-&lt;li&gt;Zonos, hiring process&lt;/li&gt;
-&lt;li&gt;Zonos Careers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here at Zonos we are committed to cultivating a team of ambitious and innovative people who are hungry and willing to stretch and grow. International trade is complicated and working at a growing cloud technology company is hard, but we are here to support your learning and development. For these reasons, if you are uncertain about applying, we encourage you to do so even if your experience doesn't exactly match the job description. We welcome diverse perspectives from people who think outside the box and aren't afraid to challenge assumptions. Come join us!&lt;/p&gt;
-&lt;p&gt;Click or drag file to upload&lt;/p&gt;
-&lt;p&gt;Supported file format: .PDF;  Maximum file size: 10.49 MB; Maximum file: 1;&lt;/p&gt;
-&lt;p&gt;Application Questions&lt;/p&gt;
-&lt;p&gt;Which of the following statements best describes your right to work in Australia? *&lt;/p&gt;
-&lt;p&gt;If not currently in Gold Coast, where are you located and are you open to relocating? *&lt;/p&gt;
-&lt;p&gt;Briefly describe your relevant experience. *&lt;/p&gt;
-&lt;p&gt;0&lt;/p&gt;
-&lt;p&gt;/&lt;/p&gt;
-&lt;p&gt;500&lt;/p&gt;
-&lt;p&gt;AI disclaimer&lt;/p&gt;</description>
-    <jobtype>Full-time</jobtype>
-    <category/>
-    <experience/>
-    <education/>
-  </job>
-  <job>
-    <title>Senior/Staff Backend EngineerGold CoastFull-time</title>
-    <date>2026-09-10</date>
-    <referencenumber>54257957</referencenumber>
-    <url>https://jobs.deel.com/zonos/job-details/9fb5a596-2b33-4825-b7bb-0f49e98fc797/overview</url>
-    <company>Zonos</company>
-    <city>Remote</city>
-    <state/>
-    <country>US</country>
-    <postalcode/>
-    <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
-&lt;h3&gt;Overview&lt;/h3&gt;
-&lt;p&gt;We're hiring engineers who build things customers actually use. The title says &quot;backend,&quot; but what we want first is a product-minded problem solver who happens to be excellent at backend systems. We’re looking for someone who cares more about whether a feature ships and works than about which framework got them there. The systems we build are real-time, mission-critical, and genuinely complex.&lt;/p&gt;
-&lt;p&gt;Our backend runs primarily on Java/JVM.&lt;/p&gt;
-&lt;h3&gt;How We're Organized&lt;/h3&gt;
-&lt;p&gt;We don't have product managers. At the senior and staff level,you talk to customers directly, understand their problems, decide what to build, and ship it.That's not a side responsibility; it's the job.&lt;/p&gt;
-&lt;p&gt;In practice, that means:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Prioritization happens at the initiative level.Engineering is organized into a small number of initiatives, each with a named owner and tech lead who set direction and resolve roadmap conflicts. You're not prioritizing in a vacuum,  but you do own what gets built inside your area.&lt;/li&gt;
-&lt;li&gt;Saying no is part of the job.Customers and internal stakeholders will ask for things. Part of being senior here is having the judgment to push back, propose alternatives, or escalate when trade-offs need a wider conversation.&lt;/li&gt;
-&lt;li&gt;You're supported on customer work, not thrown into it.Customer success, sales engineering, and support handle the front line. When you join a customer call, it's because the problem needs an engineer in the room, not because you're running the account.&lt;/li&gt;
-&lt;li&gt;Conflicts go to the tech leads and CTO.Disagreements about architecture, scope, or priority don't fester. We resolve them quickly, in writing, with clear owners.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you've worked in environments where PM hand-offs slowed you down or watered down the product, you'll recognize why we do it this way. If you've never owned the full loop before, this will be a stretch — and that's fine, as long as you're hungry for it.&lt;/p&gt;
-&lt;h3&gt;Working with Agentic Tools&lt;/h3&gt;
-&lt;p&gt;Agentic development has changed what senior engineering looks like day-to-day. We're not throwing out craft. If anything, the bar on judgment, architecture, and verification has gone up. But the mechanics have shifted: more time spent specifying problems clearly, reviewing generated code with a critical eye, and catching the subtle failure modes that agents miss. Less time on boilerplate.&lt;/p&gt;
-&lt;p&gt;The engineers doing the best work here treat agents the way a strong senior treats a sharp but inexperienced teammate: delegate the right things, verify carefully, and own the outcome. They also understand that LLM intelligence is jagged — brilliant in some places, naive in others — and have built the instincts to know when to trust the output and when to dig deeper.&lt;/p&gt;
-&lt;p&gt;We want engineers who've already adopted these tools, formed real opinions about where they help and where they don't, and can bring that experience to the team.&lt;/p&gt;
-&lt;h3&gt;What You'll Do&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Work directly with customers to understand problems worth solving — and decide which ones to solve&lt;/li&gt;
-&lt;li&gt;Design backend systems and APIs that scale to billions of transactions&lt;/li&gt;
-&lt;li&gt;Use agentic tools effectively to implement features, while holding a high bar on what ships&lt;/li&gt;
-&lt;li&gt;Own architecture and trade-off decisions in your domain (we use a Bronze/Silver/Gold blast-radius framework — you'll learn it fast)&lt;/li&gt;
-&lt;li&gt;Debug production issues across services, including the gnarly ones that require deep system understanding&lt;/li&gt;
-&lt;li&gt;Champion reliability, observability, and blast-radius awareness in everything you ship&lt;/li&gt;
-&lt;li&gt;Raise the bar in code review — for both human-written and agent-generated code&lt;/li&gt;
-&lt;li&gt;Mentor teammates on customer empathy, spec-driven development, and getting real leverage from agents&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;You Might Be a Great Fit If You...&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Lead with product instinct. You ask &quot;should we build this?&quot; before &quot;how do we build this?&quot; — and you're comfortable getting on a call with a customer to find out.&lt;/li&gt;
-&lt;li&gt;Want to own the full loop: customer problem → spec → implementation → ship → follow-up.&lt;/li&gt;
-&lt;li&gt;Are fluent in Java/JVM — or fluent enough to read, debug, and verify Java code at a senior level&lt;/li&gt;
-&lt;li&gt;Have integrated agentic tools (Claude Code, Cursor, etc.) into your daily workflow and have grounded opinions about what works and what doesn't&lt;/li&gt;
-&lt;li&gt;Are inquisitive by default — you read papers, try new tools, talk to customers, and bring ideas back to the team&lt;/li&gt;
-&lt;li&gt;Take ownership. When something breaks, you fix it. When something is unclear, you go find out.&lt;/li&gt;
-&lt;li&gt;Have e-commerce, payments, or international trade background — or are excited to go deep in the space&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;More about Zonos&lt;/p&gt;
-&lt;p&gt;Learn more about Zonos, our mission, and the type of company we are building.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Zonos, building a great company&lt;/li&gt;
-&lt;li&gt;Zonos, diversity, and inclusion&lt;/li&gt;
-&lt;li&gt;Zonos, hiring process&lt;/li&gt;
-&lt;li&gt;Zonos Careers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here at Zonos we are committed to cultivating a team of ambitious and innovative people who are hungry and willing to stretch and grow. International trade is complicated and working at a growing cloud technology company is hard, but we are here to support your learning and development. For these reasons, if you are uncertain about applying, we encourage you to do so even if your experience doesn't exactly match the job description. We welcome diverse perspectives from people who think outside the box and aren't afraid to challenge assumptions. Come join us!&lt;/p&gt;
-&lt;p&gt;Click or drag file to upload&lt;/p&gt;
-&lt;p&gt;Supported file format: .PDF;  Maximum file size: 10.49 MB; Maximum file: 1;&lt;/p&gt;
-&lt;p&gt;Application Questions&lt;/p&gt;
-&lt;p&gt;Which of the following statements best describes your right to work in Australia? *&lt;/p&gt;
-&lt;p&gt;If not currently in Gold Coast, where are you located and are you open to relocating? *&lt;/p&gt;
-&lt;p&gt;Briefly describe your relevant experience. *&lt;/p&gt;
-&lt;p&gt;0&lt;/p&gt;
-&lt;p&gt;/&lt;/p&gt;
-&lt;p&gt;500&lt;/p&gt;
-&lt;p&gt;AI disclaimer&lt;/p&gt;</description>
     <jobtype>Full-time</jobtype>
     <category/>
     <experience/>
@@ -236,7 +90,7 @@
   <job>
     <title>Customs Entry Writer/AuditorSt.George UTFull-time</title>
     <date>2026-09-10</date>
-    <referencenumber>45385516</referencenumber>
+    <referencenumber>73033674</referencenumber>
     <url>https://jobs.deel.com/zonos/job-details/bc873ae8-2150-4e1c-8cfa-8d25e78a374e/overview</url>
     <company>Zonos</company>
     <city>Remote</city>
@@ -310,6 +164,152 @@
 &lt;li&gt;Customs Entry Writer I:$50,000–$70,000 Prior customs brokerage experience is not required. We are looking for someone highly detail-oriented, curious, and capable of learning a complex regulatory environment.&lt;/li&gt;
 &lt;li&gt;Experienced Customs Entry Writer:$72,000–$85,000 For candidates with demonstrated experience independently preparing customs entries, working with ACE/ABI, tariff classification, PGAs, entry exceptions, and related customs processes.&lt;/li&gt;
 &lt;/ul&gt;</description>
+    <jobtype>Full-time</jobtype>
+    <category/>
+    <experience/>
+    <education/>
+  </job>
+  <job>
+    <title>Senior/Staff Backend EngineerGold CoastFull-time</title>
+    <date>2026-09-10</date>
+    <referencenumber>78747380</referencenumber>
+    <url>https://jobs.deel.com/zonos/job-details/9fb5a596-2b33-4825-b7bb-0f49e98fc797/overview</url>
+    <company>Zonos</company>
+    <city>Remote</city>
+    <state/>
+    <country>US</country>
+    <postalcode/>
+    <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;We're hiring engineers who build things customers actually use. The title says &quot;backend,&quot; but what we want first is a product-minded problem solver who happens to be excellent at backend systems. We’re looking for someone who cares more about whether a feature ships and works than about which framework got them there. The systems we build are real-time, mission-critical, and genuinely complex.&lt;/p&gt;
+&lt;p&gt;Our backend runs primarily on Java/JVM.&lt;/p&gt;
+&lt;h3&gt;How We're Organized&lt;/h3&gt;
+&lt;p&gt;We don't have product managers. At the senior and staff level,you talk to customers directly, understand their problems, decide what to build, and ship it.That's not a side responsibility; it's the job.&lt;/p&gt;
+&lt;p&gt;In practice, that means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prioritization happens at the initiative level.Engineering is organized into a small number of initiatives, each with a named owner and tech lead who set direction and resolve roadmap conflicts. You're not prioritizing in a vacuum,  but you do own what gets built inside your area.&lt;/li&gt;
+&lt;li&gt;Saying no is part of the job.Customers and internal stakeholders will ask for things. Part of being senior here is having the judgment to push back, propose alternatives, or escalate when trade-offs need a wider conversation.&lt;/li&gt;
+&lt;li&gt;You're supported on customer work, not thrown into it.Customer success, sales engineering, and support handle the front line. When you join a customer call, it's because the problem needs an engineer in the room, not because you're running the account.&lt;/li&gt;
+&lt;li&gt;Conflicts go to the tech leads and CTO.Disagreements about architecture, scope, or priority don't fester. We resolve them quickly, in writing, with clear owners.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you've worked in environments where PM hand-offs slowed you down or watered down the product, you'll recognize why we do it this way. If you've never owned the full loop before, this will be a stretch — and that's fine, as long as you're hungry for it.&lt;/p&gt;
+&lt;h3&gt;Working with Agentic Tools&lt;/h3&gt;
+&lt;p&gt;Agentic development has changed what senior engineering looks like day-to-day. We're not throwing out craft. If anything, the bar on judgment, architecture, and verification has gone up. But the mechanics have shifted: more time spent specifying problems clearly, reviewing generated code with a critical eye, and catching the subtle failure modes that agents miss. Less time on boilerplate.&lt;/p&gt;
+&lt;p&gt;The engineers doing the best work here treat agents the way a strong senior treats a sharp but inexperienced teammate: delegate the right things, verify carefully, and own the outcome. They also understand that LLM intelligence is jagged — brilliant in some places, naive in others — and have built the instincts to know when to trust the output and when to dig deeper.&lt;/p&gt;
+&lt;p&gt;We want engineers who've already adopted these tools, formed real opinions about where they help and where they don't, and can bring that experience to the team.&lt;/p&gt;
+&lt;h3&gt;What You'll Do&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Work directly with customers to understand problems worth solving — and decide which ones to solve&lt;/li&gt;
+&lt;li&gt;Design backend systems and APIs that scale to billions of transactions&lt;/li&gt;
+&lt;li&gt;Use agentic tools effectively to implement features, while holding a high bar on what ships&lt;/li&gt;
+&lt;li&gt;Own architecture and trade-off decisions in your domain (we use a Bronze/Silver/Gold blast-radius framework — you'll learn it fast)&lt;/li&gt;
+&lt;li&gt;Debug production issues across services, including the gnarly ones that require deep system understanding&lt;/li&gt;
+&lt;li&gt;Champion reliability, observability, and blast-radius awareness in everything you ship&lt;/li&gt;
+&lt;li&gt;Raise the bar in code review — for both human-written and agent-generated code&lt;/li&gt;
+&lt;li&gt;Mentor teammates on customer empathy, spec-driven development, and getting real leverage from agents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;You Might Be a Great Fit If You...&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Lead with product instinct. You ask &quot;should we build this?&quot; before &quot;how do we build this?&quot; — and you're comfortable getting on a call with a customer to find out.&lt;/li&gt;
+&lt;li&gt;Want to own the full loop: customer problem → spec → implementation → ship → follow-up.&lt;/li&gt;
+&lt;li&gt;Are fluent in Java/JVM — or fluent enough to read, debug, and verify Java code at a senior level&lt;/li&gt;
+&lt;li&gt;Have integrated agentic tools (Claude Code, Cursor, etc.) into your daily workflow and have grounded opinions about what works and what doesn't&lt;/li&gt;
+&lt;li&gt;Are inquisitive by default — you read papers, try new tools, talk to customers, and bring ideas back to the team&lt;/li&gt;
+&lt;li&gt;Take ownership. When something breaks, you fix it. When something is unclear, you go find out.&lt;/li&gt;
+&lt;li&gt;Have e-commerce, payments, or international trade background — or are excited to go deep in the space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More about Zonos&lt;/p&gt;
+&lt;p&gt;Learn more about Zonos, our mission, and the type of company we are building.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zonos, building a great company&lt;/li&gt;
+&lt;li&gt;Zonos, diversity, and inclusion&lt;/li&gt;
+&lt;li&gt;Zonos, hiring process&lt;/li&gt;
+&lt;li&gt;Zonos Careers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here at Zonos we are committed to cultivating a team of ambitious and innovative people who are hungry and willing to stretch and grow. International trade is complicated and working at a growing cloud technology company is hard, but we are here to support your learning and development. For these reasons, if you are uncertain about applying, we encourage you to do so even if your experience doesn't exactly match the job description. We welcome diverse perspectives from people who think outside the box and aren't afraid to challenge assumptions. Come join us!&lt;/p&gt;
+&lt;p&gt;Click or drag file to upload&lt;/p&gt;
+&lt;p&gt;Supported file format: .PDF;  Maximum file size: 10.49 MB; Maximum file: 1;&lt;/p&gt;
+&lt;p&gt;Application Questions&lt;/p&gt;
+&lt;p&gt;Which of the following statements best describes your right to work in Australia? *&lt;/p&gt;
+&lt;p&gt;If not currently in Gold Coast, where are you located and are you open to relocating? *&lt;/p&gt;
+&lt;p&gt;Briefly describe your relevant experience. *&lt;/p&gt;
+&lt;p&gt;0&lt;/p&gt;
+&lt;p&gt;/&lt;/p&gt;
+&lt;p&gt;500&lt;/p&gt;
+&lt;p&gt;AI disclaimer&lt;/p&gt;</description>
+    <jobtype>Full-time</jobtype>
+    <category/>
+    <experience/>
+    <education/>
+  </job>
+  <job>
+    <title>Senior/Staff Backend EngineerGold CoastFull-time</title>
+    <date>2026-09-10</date>
+    <referencenumber>78747380</referencenumber>
+    <url>https://jobs.deel.com/zonos/job-details/9fb5a596-2b33-4825-b7bb-0f49e98fc797/overview</url>
+    <company>Zonos</company>
+    <city>Remote</city>
+    <state/>
+    <country>US</country>
+    <postalcode/>
+    <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;We're hiring engineers who build things customers actually use. The title says &quot;backend,&quot; but what we want first is a product-minded problem solver who happens to be excellent at backend systems. We’re looking for someone who cares more about whether a feature ships and works than about which framework got them there. The systems we build are real-time, mission-critical, and genuinely complex.&lt;/p&gt;
+&lt;p&gt;Our backend runs primarily on Java/JVM.&lt;/p&gt;
+&lt;h3&gt;How We're Organized&lt;/h3&gt;
+&lt;p&gt;We don't have product managers. At the senior and staff level,you talk to customers directly, understand their problems, decide what to build, and ship it.That's not a side responsibility; it's the job.&lt;/p&gt;
+&lt;p&gt;In practice, that means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prioritization happens at the initiative level.Engineering is organized into a small number of initiatives, each with a named owner and tech lead who set direction and resolve roadmap conflicts. You're not prioritizing in a vacuum,  but you do own what gets built inside your area.&lt;/li&gt;
+&lt;li&gt;Saying no is part of the job.Customers and internal stakeholders will ask for things. Part of being senior here is having the judgment to push back, propose alternatives, or escalate when trade-offs need a wider conversation.&lt;/li&gt;
+&lt;li&gt;You're supported on customer work, not thrown into it.Customer success, sales engineering, and support handle the front line. When you join a customer call, it's because the problem needs an engineer in the room, not because you're running the account.&lt;/li&gt;
+&lt;li&gt;Conflicts go to the tech leads and CTO.Disagreements about architecture, scope, or priority don't fester. We resolve them quickly, in writing, with clear owners.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you've worked in environments where PM hand-offs slowed you down or watered down the product, you'll recognize why we do it this way. If you've never owned the full loop before, this will be a stretch — and that's fine, as long as you're hungry for it.&lt;/p&gt;
+&lt;h3&gt;Working with Agentic Tools&lt;/h3&gt;
+&lt;p&gt;Agentic development has changed what senior engineering looks like day-to-day. We're not throwing out craft. If anything, the bar on judgment, architecture, and verification has gone up. But the mechanics have shifted: more time spent specifying problems clearly, reviewing generated code with a critical eye, and catching the subtle failure modes that agents miss. Less time on boilerplate.&lt;/p&gt;
+&lt;p&gt;The engineers doing the best work here treat agents the way a strong senior treats a sharp but inexperienced teammate: delegate the right things, verify carefully, and own the outcome. They also understand that LLM intelligence is jagged — brilliant in some places, naive in others — and have built the instincts to know when to trust the output and when to dig deeper.&lt;/p&gt;
+&lt;p&gt;We want engineers who've already adopted these tools, formed real opinions about where they help and where they don't, and can bring that experience to the team.&lt;/p&gt;
+&lt;h3&gt;What You'll Do&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Work directly with customers to understand problems worth solving — and decide which ones to solve&lt;/li&gt;
+&lt;li&gt;Design backend systems and APIs that scale to billions of transactions&lt;/li&gt;
+&lt;li&gt;Use agentic tools effectively to implement features, while holding a high bar on what ships&lt;/li&gt;
+&lt;li&gt;Own architecture and trade-off decisions in your domain (we use a Bronze/Silver/Gold blast-radius framework — you'll learn it fast)&lt;/li&gt;
+&lt;li&gt;Debug production issues across services, including the gnarly ones that require deep system understanding&lt;/li&gt;
+&lt;li&gt;Champion reliability, observability, and blast-radius awareness in everything you ship&lt;/li&gt;
+&lt;li&gt;Raise the bar in code review — for both human-written and agent-generated code&lt;/li&gt;
+&lt;li&gt;Mentor teammates on customer empathy, spec-driven development, and getting real leverage from agents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;You Might Be a Great Fit If You...&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Lead with product instinct. You ask &quot;should we build this?&quot; before &quot;how do we build this?&quot; — and you're comfortable getting on a call with a customer to find out.&lt;/li&gt;
+&lt;li&gt;Want to own the full loop: customer problem → spec → implementation → ship → follow-up.&lt;/li&gt;
+&lt;li&gt;Are fluent in Java/JVM — or fluent enough to read, debug, and verify Java code at a senior level&lt;/li&gt;
+&lt;li&gt;Have integrated agentic tools (Claude Code, Cursor, etc.) into your daily workflow and have grounded opinions about what works and what doesn't&lt;/li&gt;
+&lt;li&gt;Are inquisitive by default — you read papers, try new tools, talk to customers, and bring ideas back to the team&lt;/li&gt;
+&lt;li&gt;Take ownership. When something breaks, you fix it. When something is unclear, you go find out.&lt;/li&gt;
+&lt;li&gt;Have e-commerce, payments, or international trade background — or are excited to go deep in the space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More about Zonos&lt;/p&gt;
+&lt;p&gt;Learn more about Zonos, our mission, and the type of company we are building.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zonos, building a great company&lt;/li&gt;
+&lt;li&gt;Zonos, diversity, and inclusion&lt;/li&gt;
+&lt;li&gt;Zonos, hiring process&lt;/li&gt;
+&lt;li&gt;Zonos Careers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here at Zonos we are committed to cultivating a team of ambitious and innovative people who are hungry and willing to stretch and grow. International trade is complicated and working at a growing cloud technology company is hard, but we are here to support your learning and development. For these reasons, if you are uncertain about applying, we encourage you to do so even if your experience doesn't exactly match the job description. We welcome diverse perspectives from people who think outside the box and aren't afraid to challenge assumptions. Come join us!&lt;/p&gt;
+&lt;p&gt;Click or drag file to upload&lt;/p&gt;
+&lt;p&gt;Supported file format: .PDF;  Maximum file size: 10.49 MB; Maximum file: 1;&lt;/p&gt;
+&lt;p&gt;Application Questions&lt;/p&gt;
+&lt;p&gt;Which of the following statements best describes your right to work in Australia? *&lt;/p&gt;
+&lt;p&gt;If not currently in Gold Coast, where are you located and are you open to relocating? *&lt;/p&gt;
+&lt;p&gt;Briefly describe your relevant experience. *&lt;/p&gt;
+&lt;p&gt;0&lt;/p&gt;
+&lt;p&gt;/&lt;/p&gt;
+&lt;p&gt;500&lt;/p&gt;
+&lt;p&gt;AI disclaimer&lt;/p&gt;</description>
     <jobtype>Full-time</jobtype>
     <category/>
     <experience/>
