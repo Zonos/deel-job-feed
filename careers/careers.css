@@ -257,6 +257,11 @@ body {
     display: none; /* Hidden since descriptions are just title repeated */
 }
 
+/* Push the View Details button to the bottom so buttons align across cards */
+.job-card .btn {
+    margin-top: auto;
+}
+
 .no-jobs {
     text-align: center;
     padding: 4rem 2rem;
