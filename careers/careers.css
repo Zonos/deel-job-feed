@@ -68,6 +68,12 @@ body {
     width: auto;
     display: block;
 }
+.site-header .logo svg {
+    height: 32px;
+    width: auto;
+    display: block;
+    color: var(--text-color);
+}
 
 .site-header .logo:hover {
     opacity: 0.8;
