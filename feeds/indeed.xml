@@ -6,145 +6,9 @@
   <publisherurl>https://zonos.com</publisherurl>
   <lastBuildDate>2026-10-26</lastBuildDate>
   <job>
-    <title>Senior Data ScientistSt.George UTFull-timeOn-site</title>
-    <date>2026-10-26</date>
-    <referencenumber>48508770</referencenumber>
-    <url>https://jobs.deel.com/zonos/job-details/27fffb66-b52a-4dd9-8de9-358a5c020ce4/overview</url>
-    <company>Zonos</company>
-    <city>Remote</city>
-    <state/>
-    <country>US</country>
-    <postalcode/>
-    <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
-&lt;h3&gt;Overview&lt;/h3&gt;
-&lt;p&gt;Behind almost every part of that is a data problem. Inferring an HS code from a messy product title, estimating customs value, deciding when an answer is confident enough to guarantee, spotting the shipments that need a human, and pricing risk across 200+ countries all have real financial and regulatory consequences.&lt;/p&gt;
-&lt;p&gt;We're hiring a data scientist who solves problems and ships the solution. Sometimes that's a fine-tuned LLM. Sometimes it's a Bayesian model, a well-designed experiment, an optimization, a simulation, or a 30-line rule that beats everything else. We want someone with the whole toolbelt and the judgment to pick the right tool. Cleverness for its own sake doesn't interest us.&lt;/p&gt;
-&lt;p&gt;You'll report directly to our Chief Data Scientist and work side by side with engineering, taking problems from &quot;fuzzy and important&quot; to something running in production that customers rely on.&lt;/p&gt;
-&lt;h3&gt;How we work&lt;/h3&gt;
-&lt;p&gt;Zonos doesn't have product managers. At the senior level, you talk to customers and internal teams directly, understand the problem, decide what's worth solving and how, and ship it. Part of the job is judgment: pushing back, proposing a simpler approach, or saying the data doesn't support the decision. Disagreements get resolved quickly and in writing, with clear owners.&lt;/p&gt;
-&lt;h3&gt;Life in St. George UT&lt;/h3&gt;
-&lt;p&gt;This role is on-site at our headquarters in St. George, Utah, where our team enjoys Southern Utah's 300 days of sunshine each year. Snow Canyon State Park is minutes away, Zion National Park is about an hour's drive, and Las Vegas is about two.Relocation assistance is available for candidates moving here.&lt;/p&gt;
-&lt;h3&gt;What you'll do&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Own data problems at the heart of the product, such as classification, valuation, risk, and compliance. Choose the approach, whether that's statistical modeling, classical ML, deep learning and LLMs, optimization, or a simple rule.&lt;/li&gt;
-&lt;li&gt;Work with messy, multilingual product and shipment data. Figure out what it actually says before modeling anything.&lt;/li&gt;
-&lt;li&gt;Quantify uncertainty and make it useful. Decide when we're confident enough to act, when to route work to a human, and what each error costs.&lt;/li&gt;
-&lt;li&gt;Design the evaluations, experiments, and analyses that tell us whether something actually worked, and hold the line when it didn't.&lt;/li&gt;
-&lt;li&gt;Write production-quality Python and SQL, then ship, monitor, and iterate on what you build.&lt;/li&gt;
-&lt;li&gt;Join the on-call rotation and debug in production, including the subtle failures that only show up on real traffic.&lt;/li&gt;
-&lt;li&gt;Bring rigor to product and business decisions beyond your own projects.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;You might be a great fit if you...&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Reach for the right tool, not the newest one.You can explain why you chose a GLM over a transformer, or a heuristic over both, and tell us how it played out.&lt;/li&gt;
-&lt;li&gt;Own the full loop.You've framed a problem, built the solution, shipped it, and stayed with it after launch.&lt;/li&gt;
-&lt;li&gt;Can point to impact.You've shipped work that moved a real metric, and you can tell us which one and how you measured it.&lt;/li&gt;
-&lt;li&gt;Write code engineers are happy to merge.You explore in notebooks, and you ship clean, tested code.&lt;/li&gt;
-&lt;li&gt;Lead with product judgment.You ask &quot;should we solve this?&quot; before &quot;how do we solve this?&quot;&lt;/li&gt;
-&lt;li&gt;Want to live and work in sunny St. George, Utah, with a real work-life balance.&lt;/li&gt;
-&lt;li&gt;You also bring:5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.Strong Python and SQL.&lt;/li&gt;
-&lt;li&gt;5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.&lt;/li&gt;
-&lt;li&gt;Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.&lt;/li&gt;
-&lt;li&gt;Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.&lt;/li&gt;
-&lt;li&gt;Strong Python and SQL.&lt;/li&gt;
-&lt;li&gt;Nice to have: optimization or operations research, causal inference, forecasting, Bayesian methods, serving models on GPUs, and experience with trade, customs, logistics, ecommerce, or payments data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.&lt;/li&gt;
-&lt;li&gt;Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.&lt;/li&gt;
-&lt;li&gt;Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.&lt;/li&gt;
-&lt;li&gt;Strong Python and SQL.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;What we offer:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Compensation:$200,000–$275,000 annual base salary, depending on experience and demonstrated impact.If your compensation expectations fall outside this range, we'd still love to hear from you.We're focused on finding the right person and are willing to be flexible for exceptional talent.&lt;/li&gt;
-&lt;li&gt;Relocation assistance is available for candidates relocating to St. George, Utah.&lt;/li&gt;
-&lt;li&gt;Medical, Dental, Vision, &amp; Life - we pay 100% of the employee premium!&lt;/li&gt;
-&lt;li&gt;Paid parental leave and other life event leave&lt;/li&gt;
-&lt;li&gt;401k retirement plan with generous company match&lt;/li&gt;
-&lt;li&gt;4 weeks of vacation, plus sick and other paid time off. Take some time to relax!&lt;/li&gt;
-&lt;li&gt;Employee Assistance Program&lt;/li&gt;
-&lt;li&gt;1 month paid time off at 5 year anniversary&lt;/li&gt;
-&lt;li&gt;Office stocked with snacks and drinks&lt;/li&gt;
-&lt;li&gt;Weekly company lunch&lt;/li&gt;
-&lt;/ul&gt;</description>
-    <jobtype>Full-time</jobtype>
-    <category/>
-    <experience/>
-    <education/>
-  </job>
-  <job>
-    <title>Senior Data ScientistSt.George UTFull-timeOn-site</title>
-    <date>2026-10-26</date>
-    <referencenumber>48508770</referencenumber>
-    <url>https://jobs.deel.com/zonos/job-details/27fffb66-b52a-4dd9-8de9-358a5c020ce4/overview</url>
-    <company>Zonos</company>
-    <city>Remote</city>
-    <state/>
-    <country>US</country>
-    <postalcode/>
-    <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
-&lt;h3&gt;Overview&lt;/h3&gt;
-&lt;p&gt;Behind almost every part of that is a data problem. Inferring an HS code from a messy product title, estimating customs value, deciding when an answer is confident enough to guarantee, spotting the shipments that need a human, and pricing risk across 200+ countries all have real financial and regulatory consequences.&lt;/p&gt;
-&lt;p&gt;We're hiring a data scientist who solves problems and ships the solution. Sometimes that's a fine-tuned LLM. Sometimes it's a Bayesian model, a well-designed experiment, an optimization, a simulation, or a 30-line rule that beats everything else. We want someone with the whole toolbelt and the judgment to pick the right tool. Cleverness for its own sake doesn't interest us.&lt;/p&gt;
-&lt;p&gt;You'll report directly to our Chief Data Scientist and work side by side with engineering, taking problems from &quot;fuzzy and important&quot; to something running in production that customers rely on.&lt;/p&gt;
-&lt;h3&gt;How we work&lt;/h3&gt;
-&lt;p&gt;Zonos doesn't have product managers. At the senior level, you talk to customers and internal teams directly, understand the problem, decide what's worth solving and how, and ship it. Part of the job is judgment: pushing back, proposing a simpler approach, or saying the data doesn't support the decision. Disagreements get resolved quickly and in writing, with clear owners.&lt;/p&gt;
-&lt;h3&gt;Life in St. George UT&lt;/h3&gt;
-&lt;p&gt;This role is on-site at our headquarters in St. George, Utah, where our team enjoys Southern Utah's 300 days of sunshine each year. Snow Canyon State Park is minutes away, Zion National Park is about an hour's drive, and Las Vegas is about two.Relocation assistance is available for candidates moving here.&lt;/p&gt;
-&lt;h3&gt;What you'll do&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Own data problems at the heart of the product, such as classification, valuation, risk, and compliance. Choose the approach, whether that's statistical modeling, classical ML, deep learning and LLMs, optimization, or a simple rule.&lt;/li&gt;
-&lt;li&gt;Work with messy, multilingual product and shipment data. Figure out what it actually says before modeling anything.&lt;/li&gt;
-&lt;li&gt;Quantify uncertainty and make it useful. Decide when we're confident enough to act, when to route work to a human, and what each error costs.&lt;/li&gt;
-&lt;li&gt;Design the evaluations, experiments, and analyses that tell us whether something actually worked, and hold the line when it didn't.&lt;/li&gt;
-&lt;li&gt;Write production-quality Python and SQL, then ship, monitor, and iterate on what you build.&lt;/li&gt;
-&lt;li&gt;Join the on-call rotation and debug in production, including the subtle failures that only show up on real traffic.&lt;/li&gt;
-&lt;li&gt;Bring rigor to product and business decisions beyond your own projects.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;You might be a great fit if you...&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Reach for the right tool, not the newest one.You can explain why you chose a GLM over a transformer, or a heuristic over both, and tell us how it played out.&lt;/li&gt;
-&lt;li&gt;Own the full loop.You've framed a problem, built the solution, shipped it, and stayed with it after launch.&lt;/li&gt;
-&lt;li&gt;Can point to impact.You've shipped work that moved a real metric, and you can tell us which one and how you measured it.&lt;/li&gt;
-&lt;li&gt;Write code engineers are happy to merge.You explore in notebooks, and you ship clean, tested code.&lt;/li&gt;
-&lt;li&gt;Lead with product judgment.You ask &quot;should we solve this?&quot; before &quot;how do we solve this?&quot;&lt;/li&gt;
-&lt;li&gt;Want to live and work in sunny St. George, Utah, with a real work-life balance.&lt;/li&gt;
-&lt;li&gt;You also bring:5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.Strong Python and SQL.&lt;/li&gt;
-&lt;li&gt;5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.&lt;/li&gt;
-&lt;li&gt;Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.&lt;/li&gt;
-&lt;li&gt;Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.&lt;/li&gt;
-&lt;li&gt;Strong Python and SQL.&lt;/li&gt;
-&lt;li&gt;Nice to have: optimization or operations research, causal inference, forecasting, Bayesian methods, serving models on GPUs, and experience with trade, customs, logistics, ecommerce, or payments data.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.&lt;/li&gt;
-&lt;li&gt;Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.&lt;/li&gt;
-&lt;li&gt;Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.&lt;/li&gt;
-&lt;li&gt;Strong Python and SQL.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;What we offer:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Compensation:$200,000–$275,000 annual base salary, depending on experience and demonstrated impact.If your compensation expectations fall outside this range, we'd still love to hear from you.We're focused on finding the right person and are willing to be flexible for exceptional talent.&lt;/li&gt;
-&lt;li&gt;Relocation assistance is available for candidates relocating to St. George, Utah.&lt;/li&gt;
-&lt;li&gt;Medical, Dental, Vision, &amp; Life - we pay 100% of the employee premium!&lt;/li&gt;
-&lt;li&gt;Paid parental leave and other life event leave&lt;/li&gt;
-&lt;li&gt;401k retirement plan with generous company match&lt;/li&gt;
-&lt;li&gt;4 weeks of vacation, plus sick and other paid time off. Take some time to relax!&lt;/li&gt;
-&lt;li&gt;Employee Assistance Program&lt;/li&gt;
-&lt;li&gt;1 month paid time off at 5 year anniversary&lt;/li&gt;
-&lt;li&gt;Office stocked with snacks and drinks&lt;/li&gt;
-&lt;li&gt;Weekly company lunch&lt;/li&gt;
-&lt;/ul&gt;</description>
-    <jobtype>Full-time</jobtype>
-    <category/>
-    <experience/>
-    <education/>
-  </job>
-  <job>
     <title>Senior/Staff Backend EngineerGold CoastFull-timeOn-site</title>
     <date>2026-10-26</date>
-    <referencenumber>29479908</referencenumber>
+    <referencenumber>23698924</referencenumber>
     <url>https://jobs.deel.com/zonos/job-details/9fb5a596-2b33-4825-b7bb-0f49e98fc797/overview</url>
     <company>Zonos</company>
     <city>Remote</city>
@@ -215,10 +79,10 @@
     <education/>
   </job>
   <job>
-    <title>Senior/Staff Backend EngineerGold CoastFull-timeOn-site</title>
+    <title>Senior Data ScientistSt.George UTFull-timeOn-site</title>
     <date>2026-10-26</date>
-    <referencenumber>29479908</referencenumber>
-    <url>https://jobs.deel.com/zonos/job-details/9fb5a596-2b33-4825-b7bb-0f49e98fc797/overview</url>
+    <referencenumber>67007637</referencenumber>
+    <url>https://jobs.deel.com/zonos/job-details/27fffb66-b52a-4dd9-8de9-358a5c020ce4/overview</url>
     <company>Zonos</company>
     <city>Remote</city>
     <state/>
@@ -226,62 +90,57 @@
     <postalcode/>
     <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
 &lt;h3&gt;Overview&lt;/h3&gt;
-&lt;p&gt;We're hiring engineers who build things customers actually use. The title says &quot;backend,&quot; but what we want first is a product-minded problem solver who happens to be excellent at backend systems. We’re looking for someone who cares more about whether a feature ships and works than about which framework got them there. The systems we build are real-time, mission-critical, and genuinely complex.&lt;/p&gt;
-&lt;p&gt;Our backend runs primarily on Java/JVM.&lt;/p&gt;
-&lt;h3&gt;How We're Organized&lt;/h3&gt;
-&lt;p&gt;We don't have product managers. At the senior and staff level,you talk to customers directly, understand their problems, decide what to build, and ship it.That's not a side responsibility; it's the job.&lt;/p&gt;
-&lt;p&gt;In practice, that means:&lt;/p&gt;
+&lt;p&gt;Behind almost every part of that is a data problem. Inferring an HS code from a messy product title, estimating customs value, deciding when an answer is confident enough to guarantee, spotting the shipments that need a human, and pricing risk across 200+ countries all have real financial and regulatory consequences.&lt;/p&gt;
+&lt;p&gt;We're hiring a data scientist who solves problems and ships the solution. Sometimes that's a fine-tuned LLM. Sometimes it's a Bayesian model, a well-designed experiment, an optimization, a simulation, or a 30-line rule that beats everything else. We want someone with the whole toolbelt and the judgment to pick the right tool. Cleverness for its own sake doesn't interest us.&lt;/p&gt;
+&lt;p&gt;You'll report directly to our Chief Data Scientist and work side by side with engineering, taking problems from &quot;fuzzy and important&quot; to something running in production that customers rely on.&lt;/p&gt;
+&lt;h3&gt;How we work&lt;/h3&gt;
+&lt;p&gt;Zonos doesn't have product managers. At the senior level, you talk to customers and internal teams directly, understand the problem, decide what's worth solving and how, and ship it. Part of the job is judgment: pushing back, proposing a simpler approach, or saying the data doesn't support the decision. Disagreements get resolved quickly and in writing, with clear owners.&lt;/p&gt;
+&lt;h3&gt;Life in St. George UT&lt;/h3&gt;
+&lt;p&gt;This role is on-site at our headquarters in St. George, Utah, where our team enjoys Southern Utah's 300 days of sunshine each year. Snow Canyon State Park is minutes away, Zion National Park is about an hour's drive, and Las Vegas is about two.Relocation assistance is available for candidates moving here.&lt;/p&gt;
+&lt;h3&gt;What you'll do&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Prioritization happens at the initiative level.Engineering is organized into a small number of initiatives, each with a named owner and tech lead who set direction and resolve roadmap conflicts. You're not prioritizing in a vacuum,  but you do own what gets built inside your area.&lt;/li&gt;
-&lt;li&gt;Saying no is part of the job.Customers and internal stakeholders will ask for things. Part of being senior here is having the judgment to push back, propose alternatives, or escalate when trade-offs need a wider conversation.&lt;/li&gt;
-&lt;li&gt;You're supported on customer work, not thrown into it.Customer success, sales engineering, and support handle the front line. When you join a customer call, it's because the problem needs an engineer in the room, not because you're running the account.&lt;/li&gt;
-&lt;li&gt;Conflicts go to the tech leads and CTO.Disagreements about architecture, scope, or priority don't fester. We resolve them quickly, in writing, with clear owners.&lt;/li&gt;
+&lt;li&gt;Own data problems at the heart of the product, such as classification, valuation, risk, and compliance. Choose the approach, whether that's statistical modeling, classical ML, deep learning and LLMs, optimization, or a simple rule.&lt;/li&gt;
+&lt;li&gt;Work with messy, multilingual product and shipment data. Figure out what it actually says before modeling anything.&lt;/li&gt;
+&lt;li&gt;Quantify uncertainty and make it useful. Decide when we're confident enough to act, when to route work to a human, and what each error costs.&lt;/li&gt;
+&lt;li&gt;Design the evaluations, experiments, and analyses that tell us whether something actually worked, and hold the line when it didn't.&lt;/li&gt;
+&lt;li&gt;Write production-quality Python and SQL, then ship, monitor, and iterate on what you build.&lt;/li&gt;
+&lt;li&gt;Join the on-call rotation and debug in production, including the subtle failures that only show up on real traffic.&lt;/li&gt;
+&lt;li&gt;Bring rigor to product and business decisions beyond your own projects.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If you've worked in environments where PM hand-offs slowed you down or watered down the product, you'll recognize why we do it this way. If you've never owned the full loop before, this will be a stretch — and that's fine, as long as you're hungry for it.&lt;/p&gt;
-&lt;h3&gt;Working with Agentic Tools&lt;/h3&gt;
-&lt;p&gt;Agentic development has changed what senior engineering looks like day-to-day. We're not throwing out craft. If anything, the bar on judgment, architecture, and verification has gone up. But the mechanics have shifted: more time spent specifying problems clearly, reviewing generated code with a critical eye, and catching the subtle failure modes that agents miss. Less time on boilerplate.&lt;/p&gt;
-&lt;p&gt;The engineers doing the best work here treat agents the way a strong senior treats a sharp but inexperienced teammate: delegate the right things, verify carefully, and own the outcome. They also understand that LLM intelligence is jagged — brilliant in some places, naive in others — and have built the instincts to know when to trust the output and when to dig deeper.&lt;/p&gt;
-&lt;p&gt;We want engineers who've already adopted these tools, formed real opinions about where they help and where they don't, and can bring that experience to the team.&lt;/p&gt;
-&lt;h3&gt;What You'll Do&lt;/h3&gt;
+&lt;h3&gt;You might be a great fit if you...&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Work directly with customers to understand problems worth solving — and decide which ones to solve&lt;/li&gt;
-&lt;li&gt;Design backend systems and APIs that scale to billions of transactions&lt;/li&gt;
-&lt;li&gt;Use agentic tools effectively to implement features, while holding a high bar on what ships&lt;/li&gt;
-&lt;li&gt;Own architecture and trade-off decisions in your domain (we use a Bronze/Silver/Gold blast-radius framework — you'll learn it fast)&lt;/li&gt;
-&lt;li&gt;Debug production issues across services, including the gnarly ones that require deep system understanding&lt;/li&gt;
-&lt;li&gt;Champion reliability, observability, and blast-radius awareness in everything you ship&lt;/li&gt;
-&lt;li&gt;Raise the bar in code review — for both human-written and agent-generated code&lt;/li&gt;
-&lt;li&gt;Mentor teammates on customer empathy, spec-driven development, and getting real leverage from agents&lt;/li&gt;
+&lt;li&gt;Reach for the right tool, not the newest one.You can explain why you chose a GLM over a transformer, or a heuristic over both, and tell us how it played out.&lt;/li&gt;
+&lt;li&gt;Own the full loop.You've framed a problem, built the solution, shipped it, and stayed with it after launch.&lt;/li&gt;
+&lt;li&gt;Can point to impact.You've shipped work that moved a real metric, and you can tell us which one and how you measured it.&lt;/li&gt;
+&lt;li&gt;Write code engineers are happy to merge.You explore in notebooks, and you ship clean, tested code.&lt;/li&gt;
+&lt;li&gt;Lead with product judgment.You ask &quot;should we solve this?&quot; before &quot;how do we solve this?&quot;&lt;/li&gt;
+&lt;li&gt;Want to live and work in sunny St. George, Utah, with a real work-life balance.&lt;/li&gt;
+&lt;li&gt;You also bring:5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.Strong Python and SQL.&lt;/li&gt;
+&lt;li&gt;5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.&lt;/li&gt;
+&lt;li&gt;Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.&lt;/li&gt;
+&lt;li&gt;Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.&lt;/li&gt;
+&lt;li&gt;Strong Python and SQL.&lt;/li&gt;
+&lt;li&gt;Nice to have: optimization or operations research, causal inference, forecasting, Bayesian methods, serving models on GPUs, and experience with trade, customs, logistics, ecommerce, or payments data.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;You Might Be a Great Fit If You...&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Lead with product instinct. You ask &quot;should we build this?&quot; before &quot;how do we build this?&quot; — and you're comfortable getting on a call with a customer to find out.&lt;/li&gt;
-&lt;li&gt;Want to own the full loop: customer problem → spec → implementation → ship → follow-up.&lt;/li&gt;
-&lt;li&gt;Are fluent in Java/JVM — or fluent enough to read, debug, and verify Java code at a senior level&lt;/li&gt;
-&lt;li&gt;Have integrated agentic tools (Claude Code, Cursor, etc.) into your daily workflow and have grounded opinions about what works and what doesn't&lt;/li&gt;
-&lt;li&gt;Are inquisitive by default — you read papers, try new tools, talk to customers, and bring ideas back to the team&lt;/li&gt;
-&lt;li&gt;Take ownership. When something breaks, you fix it. When something is unclear, you go find out.&lt;/li&gt;
-&lt;li&gt;Have e-commerce, payments, or international trade background — or are excited to go deep in the space&lt;/li&gt;
+&lt;li&gt;5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.&lt;/li&gt;
+&lt;li&gt;Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.&lt;/li&gt;
+&lt;li&gt;Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.&lt;/li&gt;
+&lt;li&gt;Strong Python and SQL.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;More about Zonos&lt;/p&gt;
-&lt;p&gt;Learn more about Zonos, our mission, and the type of company we are building.&lt;/p&gt;
+&lt;h3&gt;What we offer:&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Zonos, building a great company&lt;/li&gt;
-&lt;li&gt;Zonos, diversity, and inclusion&lt;/li&gt;
-&lt;li&gt;Zonos, hiring process&lt;/li&gt;
-&lt;li&gt;Zonos Careers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here at Zonos we are committed to cultivating a team of ambitious and innovative people who are hungry and willing to stretch and grow. International trade is complicated and working at a growing cloud technology company is hard, but we are here to support your learning and development. For these reasons, if you are uncertain about applying, we encourage you to do so even if your experience doesn't exactly match the job description. We welcome diverse perspectives from people who think outside the box and aren't afraid to challenge assumptions. Come join us!&lt;/p&gt;
-&lt;p&gt;Click or drag file to upload&lt;/p&gt;
-&lt;p&gt;Supported file format: .PDF;  Maximum file size: 10.49 MB; Maximum file: 1;&lt;/p&gt;
-&lt;p&gt;Application Questions&lt;/p&gt;
-&lt;p&gt;Which of the following statements best describes your right to work in Australia? *&lt;/p&gt;
-&lt;p&gt;If not currently in Gold Coast, where are you located and are you open to relocating? *&lt;/p&gt;
-&lt;p&gt;Briefly describe your relevant experience. *&lt;/p&gt;
-&lt;p&gt;0&lt;/p&gt;
-&lt;p&gt;/&lt;/p&gt;
-&lt;p&gt;500&lt;/p&gt;
-&lt;p&gt;AI disclaimer&lt;/p&gt;</description>
+&lt;li&gt;Compensation:$200,000–$275,000 annual base salary, depending on experience and demonstrated impact.If your compensation expectations fall outside this range, we'd still love to hear from you.We're focused on finding the right person and are willing to be flexible for exceptional talent.&lt;/li&gt;
+&lt;li&gt;Relocation assistance is available for candidates relocating to St. George, Utah.&lt;/li&gt;
+&lt;li&gt;Medical, Dental, Vision, &amp; Life - we pay 100% of the employee premium!&lt;/li&gt;
+&lt;li&gt;Paid parental leave and other life event leave&lt;/li&gt;
+&lt;li&gt;401k retirement plan with generous company match&lt;/li&gt;
+&lt;li&gt;4 weeks of vacation, plus sick and other paid time off. Take some time to relax!&lt;/li&gt;
+&lt;li&gt;Employee Assistance Program&lt;/li&gt;
+&lt;li&gt;1 month paid time off at 5 year anniversary&lt;/li&gt;
+&lt;li&gt;Office stocked with snacks and drinks&lt;/li&gt;
+&lt;li&gt;Weekly company lunch&lt;/li&gt;
+&lt;/ul&gt;</description>
     <jobtype>Full-time</jobtype>
     <category/>
     <experience/>
@@ -290,7 +149,7 @@
   <job>
     <title>Customer SupportSt.George UTFull-timeOn-site</title>
     <date>2026-10-26</date>
-    <referencenumber>10036684</referencenumber>
+    <referencenumber>26240435</referencenumber>
     <url>https://jobs.deel.com/zonos/job-details/c96b4ebd-9949-4f9a-abde-ce39ea500295/overview</url>
     <company>Zonos</company>
     <city>Remote</city>
@@ -345,9 +204,150 @@
     <education/>
   </job>
   <job>
+    <title>Senior/Staff Backend EngineerGold CoastFull-timeOn-site</title>
+    <date>2026-10-26</date>
+    <referencenumber>23698924</referencenumber>
+    <url>https://jobs.deel.com/zonos/job-details/9fb5a596-2b33-4825-b7bb-0f49e98fc797/overview</url>
+    <company>Zonos</company>
+    <city>Remote</city>
+    <state/>
+    <country>US</country>
+    <postalcode/>
+    <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;We're hiring engineers who build things customers actually use. The title says &quot;backend,&quot; but what we want first is a product-minded problem solver who happens to be excellent at backend systems. We’re looking for someone who cares more about whether a feature ships and works than about which framework got them there. The systems we build are real-time, mission-critical, and genuinely complex.&lt;/p&gt;
+&lt;p&gt;Our backend runs primarily on Java/JVM.&lt;/p&gt;
+&lt;h3&gt;How We're Organized&lt;/h3&gt;
+&lt;p&gt;We don't have product managers. At the senior and staff level,you talk to customers directly, understand their problems, decide what to build, and ship it.That's not a side responsibility; it's the job.&lt;/p&gt;
+&lt;p&gt;In practice, that means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prioritization happens at the initiative level.Engineering is organized into a small number of initiatives, each with a named owner and tech lead who set direction and resolve roadmap conflicts. You're not prioritizing in a vacuum,  but you do own what gets built inside your area.&lt;/li&gt;
+&lt;li&gt;Saying no is part of the job.Customers and internal stakeholders will ask for things. Part of being senior here is having the judgment to push back, propose alternatives, or escalate when trade-offs need a wider conversation.&lt;/li&gt;
+&lt;li&gt;You're supported on customer work, not thrown into it.Customer success, sales engineering, and support handle the front line. When you join a customer call, it's because the problem needs an engineer in the room, not because you're running the account.&lt;/li&gt;
+&lt;li&gt;Conflicts go to the tech leads and CTO.Disagreements about architecture, scope, or priority don't fester. We resolve them quickly, in writing, with clear owners.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you've worked in environments where PM hand-offs slowed you down or watered down the product, you'll recognize why we do it this way. If you've never owned the full loop before, this will be a stretch — and that's fine, as long as you're hungry for it.&lt;/p&gt;
+&lt;h3&gt;Working with Agentic Tools&lt;/h3&gt;
+&lt;p&gt;Agentic development has changed what senior engineering looks like day-to-day. We're not throwing out craft. If anything, the bar on judgment, architecture, and verification has gone up. But the mechanics have shifted: more time spent specifying problems clearly, reviewing generated code with a critical eye, and catching the subtle failure modes that agents miss. Less time on boilerplate.&lt;/p&gt;
+&lt;p&gt;The engineers doing the best work here treat agents the way a strong senior treats a sharp but inexperienced teammate: delegate the right things, verify carefully, and own the outcome. They also understand that LLM intelligence is jagged — brilliant in some places, naive in others — and have built the instincts to know when to trust the output and when to dig deeper.&lt;/p&gt;
+&lt;p&gt;We want engineers who've already adopted these tools, formed real opinions about where they help and where they don't, and can bring that experience to the team.&lt;/p&gt;
+&lt;h3&gt;What You'll Do&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Work directly with customers to understand problems worth solving — and decide which ones to solve&lt;/li&gt;
+&lt;li&gt;Design backend systems and APIs that scale to billions of transactions&lt;/li&gt;
+&lt;li&gt;Use agentic tools effectively to implement features, while holding a high bar on what ships&lt;/li&gt;
+&lt;li&gt;Own architecture and trade-off decisions in your domain (we use a Bronze/Silver/Gold blast-radius framework — you'll learn it fast)&lt;/li&gt;
+&lt;li&gt;Debug production issues across services, including the gnarly ones that require deep system understanding&lt;/li&gt;
+&lt;li&gt;Champion reliability, observability, and blast-radius awareness in everything you ship&lt;/li&gt;
+&lt;li&gt;Raise the bar in code review — for both human-written and agent-generated code&lt;/li&gt;
+&lt;li&gt;Mentor teammates on customer empathy, spec-driven development, and getting real leverage from agents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;You Might Be a Great Fit If You...&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Lead with product instinct. You ask &quot;should we build this?&quot; before &quot;how do we build this?&quot; — and you're comfortable getting on a call with a customer to find out.&lt;/li&gt;
+&lt;li&gt;Want to own the full loop: customer problem → spec → implementation → ship → follow-up.&lt;/li&gt;
+&lt;li&gt;Are fluent in Java/JVM — or fluent enough to read, debug, and verify Java code at a senior level&lt;/li&gt;
+&lt;li&gt;Have integrated agentic tools (Claude Code, Cursor, etc.) into your daily workflow and have grounded opinions about what works and what doesn't&lt;/li&gt;
+&lt;li&gt;Are inquisitive by default — you read papers, try new tools, talk to customers, and bring ideas back to the team&lt;/li&gt;
+&lt;li&gt;Take ownership. When something breaks, you fix it. When something is unclear, you go find out.&lt;/li&gt;
+&lt;li&gt;Have e-commerce, payments, or international trade background — or are excited to go deep in the space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More about Zonos&lt;/p&gt;
+&lt;p&gt;Learn more about Zonos, our mission, and the type of company we are building.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Zonos, building a great company&lt;/li&gt;
+&lt;li&gt;Zonos, diversity, and inclusion&lt;/li&gt;
+&lt;li&gt;Zonos, hiring process&lt;/li&gt;
+&lt;li&gt;Zonos Careers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here at Zonos we are committed to cultivating a team of ambitious and innovative people who are hungry and willing to stretch and grow. International trade is complicated and working at a growing cloud technology company is hard, but we are here to support your learning and development. For these reasons, if you are uncertain about applying, we encourage you to do so even if your experience doesn't exactly match the job description. We welcome diverse perspectives from people who think outside the box and aren't afraid to challenge assumptions. Come join us!&lt;/p&gt;
+&lt;p&gt;Click or drag file to upload&lt;/p&gt;
+&lt;p&gt;Supported file format: .PDF;  Maximum file size: 10.49 MB; Maximum file: 1;&lt;/p&gt;
+&lt;p&gt;Application Questions&lt;/p&gt;
+&lt;p&gt;Which of the following statements best describes your right to work in Australia? *&lt;/p&gt;
+&lt;p&gt;If not currently in Gold Coast, where are you located and are you open to relocating? *&lt;/p&gt;
+&lt;p&gt;Briefly describe your relevant experience. *&lt;/p&gt;
+&lt;p&gt;0&lt;/p&gt;
+&lt;p&gt;/&lt;/p&gt;
+&lt;p&gt;500&lt;/p&gt;
+&lt;p&gt;AI disclaimer&lt;/p&gt;</description>
+    <jobtype>Full-time</jobtype>
+    <category/>
+    <experience/>
+    <education/>
+  </job>
+  <job>
+    <title>Senior Data ScientistSt.George UTFull-timeOn-site</title>
+    <date>2026-10-26</date>
+    <referencenumber>67007637</referencenumber>
+    <url>https://jobs.deel.com/zonos/job-details/27fffb66-b52a-4dd9-8de9-358a5c020ce4/overview</url>
+    <company>Zonos</company>
+    <city>Remote</city>
+    <state/>
+    <country>US</country>
+    <postalcode/>
+    <description>&lt;p&gt;Zonos is the AI operating system for cross-border trade, powering everything from checkout to customs clearance for more than 50,000 ecommerce merchants and 70+ postal operators across 200+ countries. We help businesses grow globally by removing the complexity of international commerce—calculating, collecting, and guaranteeing duties, taxes, and fees at checkout so shoppers see the true total cost upfront, eliminating surprise charges at delivery and the burden of managing country-specific tax requirements. Beyond ecommerce, Zonos supports carriers, postal operators, marketplaces, and customs agencies with AI-driven tools that infer and validate key customs data, including HS codes, country of origin, and customs value, alongside licensed customs brokerage services that ensure goods move compliantly and efficiently across borders.&lt;/p&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;Behind almost every part of that is a data problem. Inferring an HS code from a messy product title, estimating customs value, deciding when an answer is confident enough to guarantee, spotting the shipments that need a human, and pricing risk across 200+ countries all have real financial and regulatory consequences.&lt;/p&gt;
+&lt;p&gt;We're hiring a data scientist who solves problems and ships the solution. Sometimes that's a fine-tuned LLM. Sometimes it's a Bayesian model, a well-designed experiment, an optimization, a simulation, or a 30-line rule that beats everything else. We want someone with the whole toolbelt and the judgment to pick the right tool. Cleverness for its own sake doesn't interest us.&lt;/p&gt;
+&lt;p&gt;You'll report directly to our Chief Data Scientist and work side by side with engineering, taking problems from &quot;fuzzy and important&quot; to something running in production that customers rely on.&lt;/p&gt;
+&lt;h3&gt;How we work&lt;/h3&gt;
+&lt;p&gt;Zonos doesn't have product managers. At the senior level, you talk to customers and internal teams directly, understand the problem, decide what's worth solving and how, and ship it. Part of the job is judgment: pushing back, proposing a simpler approach, or saying the data doesn't support the decision. Disagreements get resolved quickly and in writing, with clear owners.&lt;/p&gt;
+&lt;h3&gt;Life in St. George UT&lt;/h3&gt;
+&lt;p&gt;This role is on-site at our headquarters in St. George, Utah, where our team enjoys Southern Utah's 300 days of sunshine each year. Snow Canyon State Park is minutes away, Zion National Park is about an hour's drive, and Las Vegas is about two.Relocation assistance is available for candidates moving here.&lt;/p&gt;
+&lt;h3&gt;What you'll do&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Own data problems at the heart of the product, such as classification, valuation, risk, and compliance. Choose the approach, whether that's statistical modeling, classical ML, deep learning and LLMs, optimization, or a simple rule.&lt;/li&gt;
+&lt;li&gt;Work with messy, multilingual product and shipment data. Figure out what it actually says before modeling anything.&lt;/li&gt;
+&lt;li&gt;Quantify uncertainty and make it useful. Decide when we're confident enough to act, when to route work to a human, and what each error costs.&lt;/li&gt;
+&lt;li&gt;Design the evaluations, experiments, and analyses that tell us whether something actually worked, and hold the line when it didn't.&lt;/li&gt;
+&lt;li&gt;Write production-quality Python and SQL, then ship, monitor, and iterate on what you build.&lt;/li&gt;
+&lt;li&gt;Join the on-call rotation and debug in production, including the subtle failures that only show up on real traffic.&lt;/li&gt;
+&lt;li&gt;Bring rigor to product and business decisions beyond your own projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;You might be a great fit if you...&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Reach for the right tool, not the newest one.You can explain why you chose a GLM over a transformer, or a heuristic over both, and tell us how it played out.&lt;/li&gt;
+&lt;li&gt;Own the full loop.You've framed a problem, built the solution, shipped it, and stayed with it after launch.&lt;/li&gt;
+&lt;li&gt;Can point to impact.You've shipped work that moved a real metric, and you can tell us which one and how you measured it.&lt;/li&gt;
+&lt;li&gt;Write code engineers are happy to merge.You explore in notebooks, and you ship clean, tested code.&lt;/li&gt;
+&lt;li&gt;Lead with product judgment.You ask &quot;should we solve this?&quot; before &quot;how do we solve this?&quot;&lt;/li&gt;
+&lt;li&gt;Want to live and work in sunny St. George, Utah, with a real work-life balance.&lt;/li&gt;
+&lt;li&gt;You also bring:5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.Strong Python and SQL.&lt;/li&gt;
+&lt;li&gt;5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.&lt;/li&gt;
+&lt;li&gt;Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.&lt;/li&gt;
+&lt;li&gt;Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.&lt;/li&gt;
+&lt;li&gt;Strong Python and SQL.&lt;/li&gt;
+&lt;li&gt;Nice to have: optimization or operations research, causal inference, forecasting, Bayesian methods, serving models on GPUs, and experience with trade, customs, logistics, ecommerce, or payments data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;5+ years of hands-on data science work with a Bachelor's degree, or 3+ years with a Master's or PhD, including things you built that ran in production.&lt;/li&gt;
+&lt;li&gt;Real depth in statistics: inference, experimental design, and uncertainty. You understand what the numbers mean, not just how to produce them.&lt;/li&gt;
+&lt;li&gt;Practical experience with ML and LLMs/NLP, including fine-tuning, embeddings, evaluation, and text classification at scale.&lt;/li&gt;
+&lt;li&gt;Strong Python and SQL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What we offer:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compensation:$200,000–$275,000 annual base salary, depending on experience and demonstrated impact.If your compensation expectations fall outside this range, we'd still love to hear from you.We're focused on finding the right person and are willing to be flexible for exceptional talent.&lt;/li&gt;
+&lt;li&gt;Relocation assistance is available for candidates relocating to St. George, Utah.&lt;/li&gt;
+&lt;li&gt;Medical, Dental, Vision, &amp; Life - we pay 100% of the employee premium!&lt;/li&gt;
+&lt;li&gt;Paid parental leave and other life event leave&lt;/li&gt;
+&lt;li&gt;401k retirement plan with generous company match&lt;/li&gt;
+&lt;li&gt;4 weeks of vacation, plus sick and other paid time off. Take some time to relax!&lt;/li&gt;
+&lt;li&gt;Employee Assistance Program&lt;/li&gt;
+&lt;li&gt;1 month paid time off at 5 year anniversary&lt;/li&gt;
+&lt;li&gt;Office stocked with snacks and drinks&lt;/li&gt;
+&lt;li&gt;Weekly company lunch&lt;/li&gt;
+&lt;/ul&gt;</description>
+    <jobtype>Full-time</jobtype>
+    <category/>
+    <experience/>
+    <education/>
+  </job>
+  <job>
     <title>Customer SupportSt.George UTFull-timeOn-site</title>
     <date>2026-10-26</date>
-    <referencenumber>10036684</referencenumber>
+    <referencenumber>26240435</referencenumber>
     <url>https://jobs.deel.com/zonos/job-details/c96b4ebd-9949-4f9a-abde-ce39ea500295/overview</url>
     <company>Zonos</company>
     <city>Remote</city>
