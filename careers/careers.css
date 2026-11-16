@@ -176,13 +176,15 @@ body {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    justify-items: center;
+    justify-items: stretch;
+    grid-auto-rows: 1fr;
 }
 
 /* Center single job card */
 .jobs-grid > .job-card:only-child {
     max-width: 500px;
     width: 100%;
+    justify-self: center;
 }
 
 .job-card {
