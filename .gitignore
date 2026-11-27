@@ -25,3 +25,4 @@ Thumbs.db
 
 # Don't ignore feeds directory - we want to commit it
 # feeds/
+.venv/
